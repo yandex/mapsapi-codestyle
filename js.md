@@ -5,10 +5,10 @@ JavaScript CodeStyle
 
   * Files should be encoded in UTF-8 without [BOM](http://en.wikipedia.org/wiki/Byte-order_mark).
   * The recommended line-break character is LF (\n).
-  * Files should end with LF character.
+  * Files should end with a LF character.
   * One level of indention is achieved with 4 space characters.
   * The maximum line length is 120 characters.
-  * No additional white-space is allowed in the end of the line.
+  * Trailing whitespace in the end of lines should be removed.
 
 ##Naming
   * `variableNamesLikeThis`
@@ -382,7 +382,7 @@ baz + ''
 ```
 
 ##Multi-Line Statements
-  * If a statement is longer than the maximum line length, it is split into several lines and properly indented.
+  * If a statement is longer than the maximum [line length](#general), it is split into several lines and properly indented.
   * Operators should be placed in the end of the line:
 
 ```javascript
