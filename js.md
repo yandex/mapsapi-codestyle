@@ -348,11 +348,11 @@ x === void 0
 ```
 
 ##Parentheses
-  * Should be used only, if it required of the expression's syntax or semantics.
+  * Should be used only if it is required of the expression's syntax or semantics.
   * Should not be used with the unary operators `delete`, `typeof` and `void`, or with the keywords `return`, `throw` and `new`.
 
 ##Exceptions
-`throw` should be used with `new Error` or an object of a class that inherits from `Error`:
+`throw` should be used with `new Error` or an object of a class derived from `Error`:
 
 **Good:**
 ```javascript
@@ -364,7 +364,7 @@ throw 'msg';
 ```
 
 ##Type Casting
-Types should be cast explicitly:
+Types casting should be done explicitly:
 
 **Good:**
 ```javascript
@@ -382,8 +382,8 @@ baz + ''
 ```
 
 ##Multi-Line Statements
-  * If a statement is longer than the maximum line length, it is split into several lines with proper indentation.
-  * Operators are placed on the previous line:
+  * If a statement is longer than the maximum line length, it is split into several lines and properly indented.
+  * Operators should be placed in the end of the line:
 
 ```javascript
 var debt = this.calculateBaseDebt() + this.calculateSharedDebt() + this.calculateDebtPayments() +
@@ -436,7 +436,7 @@ var foo = 'A rather long string of English text, an error message \
 ```
 
 ##Empty Lines
-A single empty line can be used for grouping the code into logical sections:
+A single empty line can be used as a separator for logically grouping the code for easier reading:
 
 ```javascript
 doSomethingTo(x);
@@ -476,7 +476,7 @@ doAsync(function () {
 }.bind(this));
 ```
 
-* If assigning the current context to a variable, the name `_this` should be used:
+* If assigning the current context to a variable, the variable should be named `_this`:
 
 ```javascript
 var _this = this;
@@ -487,11 +487,11 @@ doAsync(function () {
 
 ##Comments
   * In-line comments should be prepend with `//`. Between the `//` and the text of the comment should be one space character.
-  * Comments for functions, classes, etc. should be written according to [jsdoc](http://usejsdoc.org/).
+  * Comments for functions, classes, etc. should be written according to the [jsdoc](http://usejsdoc.org/) documentation syntax.
 
 ##Function
 ###Arguments
-  * When choosing the function's signature, [Boolean Traps](http://doc.qt.digia.com/qq/qq13-apis.html#thebooleanparametertrap) should be avoided:
+  * [Boolean Traps](http://doc.qt.digia.com/qq/qq13-apis.html#thebooleanparametertrap) should be avoided in the signatures of functions:
 
 ```javascript
 /**
@@ -502,7 +502,6 @@ function fetchResults(async) {}
 // The boolean trap reduces the human-readability of the code.
 fetchResults(false);
 ```
-
   * Boolean Trap can be avoided by using one of the following methods:
 
     * Break down the function into two functions, that are named according to the action they preform:
@@ -530,7 +529,7 @@ function fetchResults(method) {}
 fetchResults(FetchMethod.SYNC);
 ```
 
-[Convenience Traps](http://doc.qt.digia.com/qq/qq13-apis.html#theconveniencetrap) should be avoided in the signature of your functions:
+[Convenience Traps](http://doc.qt.digia.com/qq/qq13-apis.html#theconveniencetrap) should be avoided in the signature of functions:
 
 ```javascript
 // A WebGL method call (without documentation, it will be hard to comprehend the meaning of the arguments)
@@ -558,7 +557,7 @@ glCtx.vertexAttribPointer(this._glHandler, {
 
 ##Classes
   * For class declaration and inheritance should be used the [inherit](https://github.com/dfilatov/inherit) lib.
-  * Destructors should be named `destruct()`.
+  * Destructors should be named `destruct`.
   * "Symmetrical" methods should be declared one after the other. For example:
 
 ```javascript
@@ -580,8 +579,7 @@ var FooClass = inherit({
 ##node.js
 
 ###Importing Modules
-
-  * CommonJS modules should be imported in the beginning of the file, after the description of the module (if present):
+  * Modules should be imported in the beginning of the file, after the description of the module (if present):
 
 **Good:**
 
@@ -607,6 +605,6 @@ This rule does not apply to modules that are imported "on demand".
 
   * Module import calls should be grouped according to the following order:
 
-1. Standard node.js modules (i.e. fs, utils, etc.).
+1. Standard node.js modules (i.e. fs, util, etc.).
 2. External lib modules.
 3. Modules of the current application.
