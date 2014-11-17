@@ -414,7 +414,7 @@ anotherStatement;
 ##String concatenation
   * Strings should be concatenated with the `+` operator.
   * The `[].join('')` should be avoided.
-  * Escaping the new line character with `\\` should be avoided.
+  * Escaping the new line character inside string literals with `\\` should be avoided.
 
 **Good:**
 ```javascript
