@@ -8,7 +8,7 @@ JavaScript CodeStyle
   * Files should end with a LF character.
   * One level of indention is achieved with 4 space characters.
   * Lines should be no longer than 120 characters.
-  * Trailing whitespace at the atend of lines should be removed.
+  * Trailing whitespace at the end of lines should be removed.
 
 ##Naming
   * `variableNamesLikeThis`
