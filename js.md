@@ -267,6 +267,7 @@ if ('driving' === getType()) {
 ```
 
 ###switch
+The switch statement should be written as in the example:
 
 ```javascript
 switch (value) {
@@ -312,6 +313,7 @@ The `with` operator should not be used.
 If there is no need for type casting, the strict equality operator `===` (or strict inequality `!==`) should be used.
 
 ###Ternary Operator
+The ternary operator should be written as in the examples:
 
 ```javascript
 var x = a ? b : c;
@@ -325,7 +327,7 @@ var z = a ?
 ```
 
 ###Unary Operators
-Unary operators should be prepended to their operands with no whitespace:
+Unary operators should be typed with no whitespace between them and their operands:
 
 ```javascript
 var foo = !bar;
@@ -417,7 +419,7 @@ anotherStatement;
 ##String concatenation
   * Strings should be concatenated with the `+` operator.
   * The `[].join('')` should be avoided.
-  * Escaping the new line character inside string literals with `\\` should be avoided.
+  * Escaping the literal newline character inside strings should be avoided.
 
 **Good:**
 ```javascript
@@ -451,8 +453,7 @@ nowDoSomethingWith(y);
 andNowWith(z);
 ```
 
-##`this` In Closures
-
+##Function Context
 * Binding the context variable for function calls should be done using [Function.prototype.bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind):
 
 ```javascript
@@ -505,16 +506,14 @@ function fetchResults(async) {}
 // The boolean trap reduces the human-readability of the code.
 fetchResults(false);
 ```
-  * Boolean Trap can be avoided by using one of the following methods:
+Boolean Trap can be avoided by using one of the following methods:
 
-    * Break down the function into two functions, that are named according to the action they preform:
-
+ * Break down the function into two functions, that are named according to the action they preform:
 ```javascript
 function fetchResultsSync() {}
 function fetchResultsAsync() {}
 ```
-    * Use constants, enums or static class-properties for the values of the parameter:
-
+  * Use constants, enums or static class-properties for the values of the parameter:
 ```javascript
 /**
  * @enum {Boolean}
@@ -559,7 +558,7 @@ glCtx.vertexAttribPointer(this._glHandler, {
 ```
 
 ##Classes
-  * For class declaration and inheritance should be used the [inherit](https://github.com/dfilatov/inherit) lib.
+  * It is recommended to use the [inherit](https://github.com/dfilatov/inherit) lib for class declaration and as an inheritance mechanism.
   * Destructors should be named `destruct`.
   * "Symmetrical" methods should be declared one after the other. For example:
 
