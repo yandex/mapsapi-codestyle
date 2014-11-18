@@ -495,7 +495,7 @@ doAsync(function () {
 
 ##Function
 ###Arguments
-  * [Boolean Traps](http://doc.qt.digia.com/qq/qq13-apis.html#thebooleanparametertrap) should be avoided in the signatures of functions:
+[Boolean Traps](http://doc.qt.digia.com/qq/qq13-apis.html#thebooleanparametertrap) should be avoided in the signatures of functions:
 
 ```javascript
 /**
