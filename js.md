@@ -6,7 +6,7 @@ JavaScript CodeStyle
   * Files should be encoded in UTF-8 without [BOM](http://en.wikipedia.org/wiki/Byte-order_mark).
   * The recommended line-break character is LF (\n).
   * Files should end with a LF character.
-  * One level of indention is achieved with 4 space characters.
+  * One level of indentation is achieved with 4 space characters.
   * Lines should be no longer than 120 characters.
   * Trailing whitespace at the end of lines should be removed.
 
@@ -73,7 +73,7 @@ var obj = {
     prop: 0
 };
 ```
-  * Value-aligning in literal objects should be avoided:
+  * Only property names should be aligned within object literals:
 
 **Good:**
 
@@ -114,7 +114,7 @@ var obj = {
 ```
 
 ###Arrays
-  * When enumerating elements of a literal array, spaces should be typed after the coma only:
+  * When enumerating elements in an array literal, spaces should be typed after the comma only:
 
 ```javascript
 var fellowship = ['foo', 'bar', 'baz'];
@@ -123,19 +123,17 @@ var fellowship = ['foo', 'bar', 'baz'];
 ###Strings
   * String literals should use single quotes:
 
-
 ```javascript
 var lyrics = 'Never gonna give you up. Never gonna let you down. Never gonna turn around and desert you.';
 ```
-
-  * If the string's text contains a single quote, it should be escaped, rather than using double quotes:
+  * If a string contains a single quote character, it should be escaped:
 
 ```javascript
 var test = 'It shouldn\'t fail';
 ```
 
 ##Semicolons
-Statements should end with semicolon.
+Statements should always end with a semicolon.
 
 ##Keywords
   * Keywords are always followed by a single space character:
@@ -160,7 +158,7 @@ return;
 ```
 
 ##Block Statements
-  * The opening curly brace should be on the same line as the end of the previous construction, and separated with a single space:
+  * The opening curly brace should be on the same line and separated with one space character:
 
 ```javascript
 if (test) {
@@ -171,7 +169,7 @@ function foo() {
     // ...
 }
 ```
-  * Branching and looping statements should always be enclosed in curly braces:
+  * Branching and looping statements should always be surrounded with curly braces:
 
 **Good:**
 
@@ -193,7 +191,7 @@ if (test) { return; }
 
 ##Conditional Statements
 ###if
-  * `else` should be written on the same line as the closing brace of the if-part of the statement:
+  * The `else` keyword should be on the same line as the closing brace of the if-part of the statement:
 
 ```javascript
 if (test) {
@@ -202,7 +200,7 @@ if (test) {
     // ...
 }
 ```
-  * Condition statements should not contain value assignment:
+  * Condition statements should not contain assignment operations:
 
 **Good:**
 
@@ -220,7 +218,7 @@ if ((foo = bar()) > 0) {
     // ...
 }
 ```
-  * Logical operator statements should not be used for conditional branching:
+  * Logical operators should not be used for conditional branching:
 
 **Good:**
 
@@ -236,10 +234,7 @@ if (condition) {
 ```javascript
 condition && actionIfTrue() || actionIfFalse();
 ```
-  * Conditions longer than the maximum number of characters per line should be divided as follows:
-      * Lines should be terminated after a conditional operator;
-      * New lines should have the same indentation as the beginning character of the first condition;
-      * The closing parenthesis of the condition and the opening bracket of the block statement should be written on a new line.
+  * Conditions longer than the [maximum line length](#general) should be divided as in the example:
 
 ```javascript
 if (longCondition ||
@@ -287,7 +282,7 @@ switch (value) {
 
 ##Loops
 ###for
-If possible instead of a `for` loop, [Array.prototype.forEach](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) should be used:
+If possible, [Array.prototype.forEach](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) should be used instead of a `for` loop.
 
 ```javascript
 [1, 2, 3].forEach(function (value) {
@@ -297,7 +292,7 @@ If possible instead of a `for` loop, [Array.prototype.forEach](https://developer
 Performance-critical parts of the code can use a `for` statement.
 
 ###for (var i in obj)
-If possible instead of the `for-in` construction [Object.keys](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys) should be used:
+If possible, [Object.keys](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys) should be used instead of a `for-in` construction.
 ```javascript
 Object.keys(obj).forEach(function (key) {
     console.log(key);
@@ -305,7 +300,7 @@ Object.keys(obj).forEach(function (key) {
 ```
 
 ##Operators
-###with
+###'with' operator
 
 The `with` operator should not be used.
 
@@ -328,13 +323,13 @@ var z = a ?
 
 ###Unary Operators
 Unary operators should be typed with no whitespace between them and their operands:
-
 ```javascript
 var foo = !bar;
 ```
+Exceptions from this rule are the unary [special JS operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Special_operators)).
 
 ##eval
-The use of the `eval` function should be avoided.
+The `eval` function should be avoided.
 `json` serialized data should be parsed with [JSON.parse](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/JSON/parse).
 
 ##undefined
@@ -419,7 +414,7 @@ anotherStatement;
 ##String concatenation
   * Strings should be concatenated with the `+` operator.
   * The `[].join('')` should be avoided.
-  * Escaping the literal newline character inside strings should be avoided.
+  * Escaping newline literals inside strings should be avoided.
 
 **Good:**
 ```javascript
