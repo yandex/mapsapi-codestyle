@@ -7,8 +7,8 @@ JavaScript CodeStyle
   * The recommended line-break character is LF (\n).
   * Files should end with a LF character.
   * One level of indention is achieved with 4 space characters.
-  * The maximum line length is 120 characters.
-  * Trailing whitespace in the end of lines should be removed.
+  * Lines should be no longer than 120 characters.
+  * Trailing whitespace at the atend of lines should be removed.
 
 ##Naming
   * `variableNamesLikeThis`
@@ -18,15 +18,18 @@ JavaScript CodeStyle
   * `CONSTANTS_LIKE_THIS`
   * `namespacesLikeThis`
   * `events-like-this`
-  * `private` or `protected` properties and methods should be prepended with a single `_` character
+  * `private` or `protected` properties and methods should be prefixed with a single `_` character
   * Shortened and abbreviated names should be avoided.
   * Common abbreviations, such as `JSON` and `XML` are written in `CamelCase`. For example: `Json`, `Xml`.
 
 ##Variable declaration
-  * A variable should be declared in a `var` statement.
-  * A variable should be declared only once in the current scope.
-  * A variable should be declared on a new line.
-  * A variable should be declared as close as possible to the place where it's first used.
+Each variable should be declared:
+  * in a `var` statement;
+  * only once in the current scope;
+  * on a new line;
+  * as close as possible to the place where it's first used.
+
+Each `var` statement should have only one variable declared in it.
 
 **Good:**
 ```javascript
@@ -63,7 +66,7 @@ var obj = {a: 1, b: 2, c: 3};
 
 this.method({a:1, b:2});
 ```
-  * There should no whitespace characters before the closing semicolon:
+  * There should be no whitespace characters before the closing semicolon:
 
 ```javascript
 var obj = {
