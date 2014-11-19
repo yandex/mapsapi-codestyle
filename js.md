@@ -23,13 +23,13 @@ JavaScript CodeStyle
   * Common abbreviations, such as `JSON` and `XML` are written in `CamelCase`. For example: `Json`, `Xml`.
 
 ##Variable declaration
-Each variable should be declared:
-  * in a `var` statement;
-  * only once in the current scope;
-  * on a new line;
-  * as close as possible to the place where it's first used.
+  * Each variable should be declared:
+    * using a `var` statement;
+    * only once in the current scope;
+    * on a new line;
+    * as close as possible to the place where it's first used.
 
-Each `var` statement should have only one variable declared in it.
+  * Each `var` statement should have only one variable declared in it.
 
 **Good:**
 ```javascript
