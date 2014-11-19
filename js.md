@@ -364,7 +364,7 @@ throw 'msg';
 ```
 
 ##Type Casting
-Types casting should be done explicitly:
+Type casting should be done explicitly:
 
 **Good:**
 ```javascript
@@ -436,7 +436,7 @@ var foo = 'A rather long string of English text, an error message \
 ```
 
 ##Empty Lines
-A single empty line can be used as a separator for logically grouping the code for easier reading:
+A single empty line can be used as a separator for grouping the code into logical blocks:
 
 ```javascript
 doSomethingTo(x);
@@ -457,7 +457,7 @@ doAsync(function () {
 }.bind(this));
 ```
 
-* Preferably the context argument of methods should be used (if available):
+* Preferably, the context argument should be used (if available):
 
 **Good:**
 
@@ -485,7 +485,7 @@ doAsync(function () {
 ```
 
 ##Comments
-  * In-line comments should be prepend with `//`. Between the `//` and the text of the comment should be one space character.
+  * In-line comments should start with `//`. Between the `//` and the text of the comment should be one space character.
   * Comments for functions, classes, etc. should be written according to the [jsdoc](http://usejsdoc.org/) documentation syntax.
 
 ##Function
@@ -508,7 +508,7 @@ Boolean Trap can be avoided by using one of the following methods:
 function fetchResultsSync() {}
 function fetchResultsAsync() {}
 ```
-  * Use constants, enums or static class-properties for the values of the parameter:
+  * Use constants, enums or static class-properties as arguments:
 ```javascript
 /**
  * @enum {Boolean}
