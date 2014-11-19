@@ -4,7 +4,7 @@ JavaScript CodeStyle
 ##General
 
   * Files should be encoded in UTF-8 without [BOM](http://en.wikipedia.org/wiki/Byte-order_mark).
-  * The recommended line-break character is LF (\n).
+  * The recommended line-break character is LF - `\n`.
   * Files should end with a LF character.
   * One level of indentation is achieved with 4 space characters.
   * Lines should be no longer than 120 characters.
@@ -322,7 +322,7 @@ var z = a ?
 ```
 
 ###Unary Operators
-Unary operators should be typed with no whitespace between them and their operands:
+Unary operators should be typed without whitespace between them and their operands:
 ```javascript
 var foo = !bar;
 ```
