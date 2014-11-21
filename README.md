@@ -16,4 +16,4 @@ These are the fundamental principals we follow when we design and develop softwa
 * In simple expressions it's harder to make mistakes.
 
 ## Style guides
-* [JavaScript](js.md)
+* [JavaScript](javascript.md)
