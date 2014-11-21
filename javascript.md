@@ -1,5 +1,39 @@
 JavaScript CodeStyle
 ====================
+  - [General](#general)
+  - [Naming](#naming)
+  - [Variable declaration](#variable-declaration)
+  - [Literals](#literals)
+    - [Objects](#objects)
+    - [Arrays](#arrays)
+    - [Strings](#strings)
+  - [Semicolons](#semicolons)
+  - [Keywords](#keywords)
+  - [Block Statements](#block-statements)
+  - [Conditional Statements](#conditional-statements)
+    - [if](#if)
+    - [switch](#switch)
+  - [Loops](#loops)
+    - [for](#for)
+    - [for (var i in obj)](#for-var-i-in-obj)
+  - [Operators](#operators)
+    - ['with' operator](#with-operator)
+    - [Comparison Operators](#comparison-operators)
+    - [Ternary Operator](#ternary-operator)
+    - [Unary Operators](#unary-operators)
+  - [eval](#eval)
+  - [undefined](#undefined)
+  - [Parentheses](#parentheses)
+  - [Exceptions](#exceptions)
+  - [Type Casting](#type-casting)
+  - [Multi-Line Statements](#multi-line-statements)
+  - [String concatenation](#string-concatenation)
+  - [Empty Lines](#empty-lines)
+  - [Function Context](#function-context)
+  - [Comments](#comments)
+  - [Classes](#classes)
+  - [node.js](#nodejs)
+    - [Importing Modules](#importing-modules)
 
 ##General
 
@@ -488,72 +522,7 @@ doAsync(function () {
   * In-line comments should start with `//`. Between the `//` and the text of the comment should be one space character.
   * Comments for functions, classes, etc. should be written according to the [jsdoc](http://usejsdoc.org/) documentation syntax.
 
-##Function
-###Arguments
-[Boolean Traps](http://doc.qt.digia.com/qq/qq13-apis.html#thebooleanparametertrap) should be avoided in the signatures of functions:
-
-```javascript
-/**
- * @param {Boolean} async
- */
-function fetchResults(async) {}
-
-// The boolean trap reduces the human-readability of the code.
-fetchResults(false);
-```
-Boolean Trap can be avoided by using one of the following methods:
-
- * Break down the function into two functions, that are named according to the action they preform:
-```javascript
-function fetchResultsSync() {}
-function fetchResultsAsync() {}
-```
-  * Use constants, enums or static class-properties as arguments:
-```javascript
-/**
- * @enum {Boolean}
- */
-var FetchMethod = {
-    SYNC: false,
-    ASYNC: true
-};
-
-/**
- * @param {FetchMethod} method
- */
-function fetchResults(method) {}
-
-fetchResults(FetchMethod.SYNC);
-```
-
-[Convenience Traps](http://doc.qt.digia.com/qq/qq13-apis.html#theconveniencetrap) should be avoided in the signature of functions:
-
-```javascript
-// A WebGL method call (without documentation, it will be hard to comprehend the meaning of the arguments)
-glCtx.vertexAttribPointer(this._glHandler, 4, glCtx.FLOAT, false, 0, 0);
-```
-Convenience and boolean traps can be avoided using named parameters:
-
-```javascript
-/**
- * @param {Object} params
- * @param {Boolean} params.async
- */
-function fetchResults(params) {}
-
-fetchResults({async: false});
-
-glCtx.vertexAttribPointer(this._glHandler, {
-    size: 4,
-    type: glCtx.FLOAT,
-    normalizeData: false,
-    stride: 0,
-    offset: 0
-});
-```
-
 ##Classes
-  * It is recommended to use the [inherit](https://github.com/dfilatov/inherit) lib for class declaration and as an inheritance mechanism.
   * Destructors should be named `destruct`.
   * "Symmetrical" methods should be declared one after the other. For example:
 
@@ -567,11 +536,6 @@ var FooClass = inherit({
     someMethod: function() {}
 });
 ```
-
-##jQuery
-  * `jQuery` should be used only for interacting with the `DOM`.
-  * It is recommended to use third-party `extend` implementations, instead of `jQuery.extend`.
-  * It is recommended to use [vow](https://github.com/dfilatov/vow) for Promise and Deferred implementation, instead for `jQuery.Deferred`.
 
 ##node.js
 
