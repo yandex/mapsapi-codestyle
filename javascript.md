@@ -523,7 +523,6 @@ doAsync(function () {
   * Comments for functions, classes, etc. should be written according to the [jsdoc](http://usejsdoc.org/) documentation syntax.
 
 ##Classes
-  * Destructors should be named `destruct`.
   * "Symmetrical" methods should be declared one after the other. For example:
 
 ```javascript
