@@ -532,7 +532,7 @@ var FooClass = inherit({
     // destructors are placed right after the constructor
     destruct: function () {},
 
-    someMethod: function() {}
+    someMethod: function () {}
 });
 ```
 
