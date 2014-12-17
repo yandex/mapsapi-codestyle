@@ -542,7 +542,7 @@ var FooClass = inherit({
     // деструктор рядом с конструктором
     destruct: function () {},
 
-    someMethod: function() {}
+    someMethod: function () {}
 });
 ```
 
