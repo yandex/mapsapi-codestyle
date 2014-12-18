@@ -100,7 +100,7 @@ var obj = {a: 1, b: 2, c: 3};
 
 this.method({a: 1, b: 2});
 ```
-  * There should be no whitespace characters before the closing semicolon:
+  * There should be no whitespace characters before the colon:
 
 ```javascript
 var obj = {
