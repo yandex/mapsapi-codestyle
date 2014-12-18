@@ -98,7 +98,7 @@ while (items.length) {
 ```javascript
 var obj = {a: 1, b: 2, c: 3};
 
-this.method({a:1, b:2});
+this.method({a: 1, b: 2});
 ```
   * There should be no whitespace characters before the closing semicolon:
 
