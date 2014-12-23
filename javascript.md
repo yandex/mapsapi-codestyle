@@ -417,7 +417,7 @@ baz + ''
 
 ##Multi-Line Statements
   * If a statement is longer than the maximum [line length](#general), it is split into several lines and properly indented.
-  * Operators should be placed in the end of the line:
+  * The split should be done after an operator leaving it in the end of line:
 
 ```javascript
 var debt = this.calculateBaseDebt() + this.calculateSharedDebt() + this.calculateDebtPayments() +
