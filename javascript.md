@@ -27,7 +27,7 @@ JavaScript CodeStyle
   - [Exceptions](#exceptions)
   - [Type Casting](#type-casting)
   - [Multi-Line Statements](#multi-line-statements)
-  - [Chaining](#chaining)
+  - [Method Chaining](#method-chaining)
   - [String concatenation](#string-concatenation)
   - [Empty Lines](#empty-lines)
   - [Function Context](#function-context)
@@ -446,8 +446,8 @@ DoSomethingThatRequiresALongFunctionName(
 anotherStatement;
 ```
 
-##Chaining
-When chaining on multiple lines, each method call should:
+##Method Chaining
+When a method is called on a new line, it should:
   * Be one indentation level deeper than the target object.
   * Begin with the property access operator `.`.
 
