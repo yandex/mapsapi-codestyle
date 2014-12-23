@@ -27,7 +27,7 @@ JavaScript CodeStyle
   - [Exceptions](#exceptions)
   - [Type Casting](#type-casting)
   - [Multi-Line Statements](#multi-line-statements)
-  - [Multi-Line Chaining Statements](#multi-line-chaining-statements)
+  - [Chaining](#chaining)
   - [String concatenation](#string-concatenation)
   - [Empty Lines](#empty-lines)
   - [Function Context](#function-context)
@@ -446,20 +446,33 @@ DoSomethingThatRequiresALongFunctionName(
 anotherStatement;
 ```
 
-##Multi-Line Chaining Statements
-In the multi-line method chaining syntax, each method call should:
-  * Be one indentation level deeper than the target object.
-  * Begin with the dot property access operator.
+##Chaining
+* When move function call on new line in chaining:
+  * Set property access operator `.` on new line.
+  * Add one level identaion relatively target object.
 
-```javascript
+
+**Good**:
+
+```js
 someObject
     .operation()
     .operationWithCallback(function (obj) {
         obj.processed = true;
     })
-    .anotherOperation()
-    .yetAnother()
-    .finalOne();
+   .end();
+```
+
+**Bad**:
+
+```js
+someObject.
+   start().
+   end();
+
+someObject
+.start()
+.end();
 ```
 
 ##String concatenation
