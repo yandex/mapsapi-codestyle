@@ -447,10 +447,9 @@ anotherStatement;
 ```
 
 ##Chaining
-* When move function call on new line in chaining:
-  * Set property access operator `.` on new line.
-  * Add one level identaion relatively target object.
-
+When chaining on multiple lines, each method call should:
+  * Be one indentation level deeper than the target object.
+  * Begin with the property access operator `.`.
 
 **Good**:
 
