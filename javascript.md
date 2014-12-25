@@ -27,6 +27,7 @@ JavaScript CodeStyle
   - [Exceptions](#exceptions)
   - [Type Casting](#type-casting)
   - [Multi-Line Statements](#multi-line-statements)
+  - [Method Chaining](#method-chaining)
   - [String concatenation](#string-concatenation)
   - [Empty Lines](#empty-lines)
   - [Function Context](#function-context)
@@ -443,6 +444,34 @@ DoSomethingThatRequiresALongFunctionName(
     argument3,
     argument4);
 anotherStatement;
+```
+
+##Method Chaining
+When a method is called on a new line, it should:
+  * Be one indentation level deeper than the target object.
+  * Begin with the property access operator `.`.
+
+**Good**:
+
+```js
+someObject
+    .operation()
+    .operationWithCallback(function (obj) {
+        obj.processed = true;
+    })
+   .end();
+```
+
+**Bad**:
+
+```js
+someObject.
+   start().
+   end();
+
+someObject
+.start()
+.end();
 ```
 
 ##String concatenation
