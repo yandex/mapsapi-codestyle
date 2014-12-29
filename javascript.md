@@ -63,13 +63,12 @@ JavaScript CodeStyle
     * only once in the current scope;
     * on a new line;
     * as close as possible to the place where it's first used.
-
-  * Each `var` statement should have only one variable declared in it.
+  * Implied global variables should not be used.
 
 **Good:**
 ```javascript
-var keys = ['foo', 'bar'];
-var values = [23, 42];
+var keys = ['foo', 'bar'],
+    values = [23, 42];
 
 var object = {};
 while (items.length) {
