@@ -13,9 +13,6 @@ JavaScript CodeStyle
   - [Conditional Statements](#conditional-statements)
     - [if](#if)
     - [switch](#switch)
-  - [Loops](#loops)
-    - [for](#for)
-    - [for (var i in obj)](#for-var-i-in-obj)
   - [Operators](#operators)
     - ['with' operator](#with-operator)
     - [Comparison Operators](#comparison-operators)
@@ -313,25 +310,6 @@ switch (value) {
         // ...
         // no break keyword on the last case
 }
-```
-
-##Loops
-###for
-If possible, [Array.prototype.forEach](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) should be used instead of a `for` loop.
-
-```javascript
-[1, 2, 3].forEach(function (value) {
-    console.log(value);
-});
-```
-Performance-critical parts of the code can use a `for` statement.
-
-###for (var i in obj)
-If possible, [Object.keys](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys) should be used instead of a `for-in` construction.
-```javascript
-Object.keys(obj).forEach(function (key) {
-    console.log(key);
-});
 ```
 
 ##Operators

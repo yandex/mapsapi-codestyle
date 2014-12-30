@@ -13,9 +13,6 @@ JavaScript CodeStyle
   - [Условные инструкции](#8)
     - [if](#8-1)
     - [switch](#8-2)
-  - [Циклы](#9)
-    - [for](#9-1)
-    - [for (var i in obj)](#9-2)
   - [Операторы](#10)
     - [with](#10-1)
     - [Оператор равенства](#10-2)
@@ -312,27 +309,6 @@ switch (value) {
         // ...
         // no break keyword on the last case
 }
-```
-
-##<a name="9"></a>Циклы
-###<a name="9-1"></a>for
-По возможности вместо `for` используется [Array.prototype.forEach](https://developer.mozilla.org/ru/docs/JavaScript/Reference/Global_Objects/Array/forEach):
-
-```javascript
-[1, 2, 3].forEach(function (value) {
-    console.log(value);
-});
-```
-
-Код с использованием `forEach` проще читать (легче абстрагироваться от того, что происходит в каждой итерации). Где
-критична скорость используется обычный `for`.
-
-###<a name="9-2"></a>for (var i in obj)
-По возможности вместо `for-in` используется [Object.keys](https://developer.mozilla.org/ru/docs/JavaScript/Reference/Global_Objects/Object/keys):
-```javascript
-Object.keys(obj).forEach(function (key) {
-    console.log(key);
-});
 ```
 
 ##<a name="10"></a>Операторы
