@@ -47,6 +47,7 @@ JavaScript CodeStyle
 ##<a name="2"></a>Именование
   * `variableNamesLikeThis`
   * `functionNamesLikeThis`
+  * `functionArgumentsLikeThis`
   * `ClassNamesLikeThis`
   * `methodNamesLikeThis`
   * `CONSTANTS_LIKE_THIS`
@@ -438,7 +439,7 @@ var debt = this.calculateBaseDebt() + this.calculateSharedDebt() + this.calculat
 **Хорошо:**
 ```javascript
 DoSomethingThatRequiresALongFunctionName(
-    very_long_argument1,
+    veryLongArgument1,
     argument2,
     argument3,
     argument4
@@ -448,7 +449,7 @@ anotherStatement;
 **Плохо:**
 ```javascript
 DoSomethingThatRequiresALongFunctionName(
-    very_long_argument1,
+    veryLongArgument1,
     argument2,
     argument3,
     argument4);

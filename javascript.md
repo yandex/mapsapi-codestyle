@@ -48,6 +48,7 @@ JavaScript CodeStyle
 ##Naming
   * `variableNamesLikeThis`
   * `functionNamesLikeThis`
+  * `functionArgumentsLikeThis`
   * `ClassNamesLikeThis`
   * `methodNamesLikeThis`
   * `CONSTANTS_LIKE_THIS`
@@ -429,7 +430,7 @@ var debt = this.calculateBaseDebt() + this.calculateSharedDebt() + this.calculat
 **Good:**
 ```javascript
 DoSomethingThatRequiresALongFunctionName(
-    very_long_argument1,
+    veryLongArgument1,
     argument2,
     argument3,
     argument4
@@ -439,7 +440,7 @@ anotherStatement;
 **Bad:**
 ```javascript
 DoSomethingThatRequiresALongFunctionName(
-    very_long_argument1,
+    veryLongArgument1,
     argument2,
     argument3,
     argument4);
