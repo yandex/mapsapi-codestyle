@@ -33,6 +33,7 @@ JavaScript CodeStyle
   - [Function Context](#function-context)
   - [Comments](#comments)
   - [Classes](#classes)
+  - [Enums](#enums)
   - [ECMAScript 6](#ecmascript-6)
     - [Classes](#classes-1)
   - [node.js](#nodejs)
@@ -52,6 +53,7 @@ JavaScript CodeStyle
   * `functionNamesLikeThis`
   * `functionArgumentsLikeThis`
   * `ClassNamesLikeThis`
+  * `EnumNamesLikeThis`
   * `methodNamesLikeThis`
   * `CONSTANTS_LIKE_THIS`
   * `namespacesLikeThis`
@@ -566,6 +568,18 @@ var FooClass = inherit({
 
     someMethod: function () {}
 });
+```
+
+## Enums
+
+* Enum names should be in `UpperCamelCase`.
+* Enum members should be in `ALL_CAPS`.
+
+```js
+var Color = {
+    BLUE: '#0000dd',
+    RED: '#dd0000'
+};
 ```
 
 ## ECMAScript 6
