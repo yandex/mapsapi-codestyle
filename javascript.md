@@ -572,7 +572,7 @@ var FooClass = inherit({
 
 ### Classes
 
-* For class definition `class` keyword should be used:
+* For class definition the `class` keyword should be used:
 
 **Good:**
 
@@ -604,7 +604,7 @@ Circle.prototype.area = function () {
 };
 ```
 
-* There should be one whitespace after class name:
+* There should be one whitespace after the class name:
 
 **Good:**
 
@@ -636,7 +636,7 @@ class Circle {
 }
 ```
 
-* There should be one whitespace before opening curly brace of method body:
+* There should be one whitespace before the opening curly brace of method's body:
 
 **Bad:**
 
@@ -646,7 +646,7 @@ class Circle {
 }
 ```
 
-* Constructor (if exists) should be first method in class:
+* The constructor (if exists) should be the first method in a class definition:
 
 **Good:**
 
@@ -668,7 +668,7 @@ class Circle {
 }
 ```
 
-* For inheritance `extends` keyword should be used:
+* For inheritance the `extends` keyword should be used:
 
 **Good:**
 
