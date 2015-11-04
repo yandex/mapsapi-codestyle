@@ -35,6 +35,7 @@ JavaScript CodeStyle
   - [Classes](#classes)
   - [Enums](#enums)
   - [ECMAScript 6](#ecmascript-6)
+    - [Variable declaration](#variable-declaration-1)
     - [Classes](#classes-1)
   - [node.js](#nodejs)
     - [Importing Modules](#importing-modules)
@@ -584,6 +585,73 @@ var Color = {
 
 ## ECMAScript 6
 
+This section describes code style for [ECMAScript 2015 Language Specification](http://www.ecma-international.org/publications/standards/Ecma-262.htm).
+
+### Variable declaration
+
+* Avoid using `var`.
+* All immutable references should be declared using a [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const).
+* [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) should be used only for mutable references
+(i.e. when variable will be (re)assigned different value later in the code).
+
+**Good:**
+
+```js
+const count = observers.length;
+let index = 0;
+while (index < count) {
+    const observer = observers[index];
+    observer(...args);
+    index = index + 1;
+}
+```
+
+**Bad:**
+
+```js
+// Reader expects count to change!
+let count = observers.length;
+let index = 0;
+while (index < count) {
+    const observer = observers[index];
+    observer(...args);
+    index = index + 1;
+}
+
+const count = observers.length;
+let index = 0;
+while (index < count) {
+    // Reader expects observer to change within the block!
+    let observer = observers[index];
+    observer(...args);
+    index = index + 1;
+}
+
+const count = observers.length;
+// Do not use `var`
+var index = 0;
+while (index < count) {
+    observers[index](...args);
+    index = index + 1;
+}
+```
+
+* If the reference is immutable, but the value is mutable, `const` decalaration should be used:
+
+**Good:**
+
+```js
+const query = {};
+query.param = 'value';
+```
+
+**Bad:**
+
+```js
+let query = {};
+query.param = 'value';
+```
+
 ### Classes
 
 * For class definition the `class` keyword should be used:
@@ -633,76 +701,6 @@ class Circle{}
 ```
 
 * There should be no whitespace after method name:
-
-**Good:**
-
-```js
-class Circle {
-    area() {}
-}
-```
-
-**Bad:**
-
-```js
-class Circle {
-    area () {}
-}
-```
-
-* There should be one whitespace before the opening curly brace of method's body:
-
-**Bad:**
-
-```js
-class Circle {
-    area(){}
-}
-```
-
-* The constructor (if exists) should be the first method in a class definition:
-
-**Good:**
-
-```js
-class Circle {
-    constructor() {}
-
-    area() {}
-}
-```
-
-**Bad:**
-
-```js
-class Circle {
-    area() {}
-
-    constructor() {}
-}
-```
-
-* For inheritance the `extends` keyword should be used:
-
-**Good:**
-
-```js
-class Stream extends EventEmitter {}
-```
-
-**Bad:**
-
-```js
-var util = require('util');
-
-class Stream() {
-    constructor() {
-        EventEmitter.call(this);
-    }
-}
-
-util.inherits(Stream, EventEmitter);
-```
 
 ##node.js
 

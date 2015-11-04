@@ -35,7 +35,8 @@ JavaScript CodeStyle
   - [Классы](#22)
   - [Перечисления](#23)
   - [ECMAScript 6](#24)
-    - [Classes](#24-1)
+    - [Объявление переменных](#24-1)
+    - [Классы](#24-2)
   - [node.js](#25)
     - [Импортирование модулей](#25-1)
 
@@ -594,7 +595,74 @@ var Color = {
 
 ##<a name="24"></a>ECMAScript 6
 
-###<a name="24-1"></a>Классы
+Данная секция описывает стиль кодирования для [ECMAScript 2015 Language Specification](http://www.ecma-international.org/publications/standards/Ecma-262.htm).
+
+###<a name="24-1"></a>Определение переменных
+
+* Следует избегать использования `var`.
+* Все неизменяемые ссылки определяются с помощью [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const).
+* [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) используется только для изменяемых ссылок
+(т.е. когда переменной (пере)присваивается значение ниже по коду).
+
+**Хорошо:**
+
+```js
+const count = observers.length;
+let index = 0;
+while (index < count) {
+    const observer = observers[index];
+    observer(...args);
+    index = index + 1;
+}
+```
+
+**Плохо:**
+
+```js
+// Читатель ожидает, что переменная count будет меняться!
+let count = observers.length;
+let index = 0;
+while (index < count) {
+    const observer = observers[index];
+    observer(...args);
+    index = index + 1;
+}
+
+const count = observers.length;
+let index = 0;
+while (index < count) {
+    // Читатель ожидает, что переменная observer будет меняться в данном блоке!
+    let observer = observers[index];
+    observer(...args);
+    index = index + 1;
+}
+
+const count = observers.length;
+// `var` не используется
+var index = 0;
+while (index < count) {
+    observers[index](...args);
+    index = index + 1;
+}
+```
+
+* Если ссылка является неизменяемой, но значение, на которое она указывает, изменяется, следует использовать `const`:
+
+**Хорошо:**
+
+```js
+const query = {};
+query.param = 'value';
+```
+
+**Плохо:**
+
+```js
+let query = {};
+query.param = 'value';
+```
+
+###<a name="24-2"></a>Классы
 
 * Для определения класса используется ключевое слово `class`:
 
