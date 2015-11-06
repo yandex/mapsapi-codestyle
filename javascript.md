@@ -33,6 +33,8 @@ JavaScript CodeStyle
   - [Function Context](#function-context)
   - [Comments](#comments)
   - [Classes](#classes)
+  - [ECMAScript 6](#ecmascript-6)
+    - [Classes](#classes-1)
   - [node.js](#nodejs)
     - [Importing Modules](#importing-modules)
 
@@ -564,6 +566,128 @@ var FooClass = inherit({
 
     someMethod: function () {}
 });
+```
+
+## ECMAScript 6
+
+### Classes
+
+* For class definition the `class` keyword should be used:
+
+**Good:**
+
+```js
+class Circle {
+    constructor(x, y, radius) {
+        this.x = x;
+        this.y = y;
+        this.radius = radius;
+    }
+
+    area() {
+        return Math.PI * this.radius * this.radius;
+    }
+}
+```
+
+**Bad:**
+
+```js
+function Circle(x, y, radius) {
+    this.x = x;
+    this.y = y;
+    this.radius = radius;
+}
+
+Circle.prototype.area = function () {
+    return Math.PI * this.radius * this.radius;
+};
+```
+
+* There should be one whitespace after the class name:
+
+**Good:**
+
+```js
+class Circle {}
+```
+
+**Bad:**
+
+```js
+class Circle{}
+```
+
+* There should be no whitespace after method name:
+
+**Good:**
+
+```js
+class Circle {
+    area() {}
+}
+```
+
+**Bad:**
+
+```js
+class Circle {
+    area () {}
+}
+```
+
+* There should be one whitespace before the opening curly brace of method's body:
+
+**Bad:**
+
+```js
+class Circle {
+    area(){}
+}
+```
+
+* The constructor (if exists) should be the first method in a class definition:
+
+**Good:**
+
+```js
+class Circle {
+    constructor() {}
+
+    area() {}
+}
+```
+
+**Bad:**
+
+```js
+class Circle {
+    area() {}
+
+    constructor() {}
+}
+```
+
+* For inheritance the `extends` keyword should be used:
+
+**Good:**
+
+```js
+class Stream extends EventEmitter {}
+```
+
+**Bad:**
+
+```js
+var util = require('util');
+
+class Stream() {
+    constructor() {
+        EventEmitter.call(this);
+    }
+}
+
+util.inherits(Stream, EventEmitter);
 ```
 
 ##node.js

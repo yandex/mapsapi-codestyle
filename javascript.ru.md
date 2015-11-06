@@ -33,8 +33,10 @@ JavaScript CodeStyle
   - [Контекст функции](#20)
   - [Комментарии](#21)
   - [Классы](#22)
-  - [node.js](#23)
-    - [Импортирование модулей](#23-1)
+  - [ECMAScript 6](#23)
+    - [Classes](#23-1)
+  - [node.js](#24)
+    - [Импортирование модулей](#24-1)
 
 ##<a name="1"></a>Именование
 
@@ -576,9 +578,131 @@ var FooClass = inherit({
 });
 ```
 
-##<a name="23"></a>node.js
+##<a name="23"></a>ECMAScript 6
 
-###<a name="23-1"></a>Импортирование модулей
+###<a name="23-1"></a>Классы
+
+* Для определения класса используется ключевое слово `class`:
+
+**Хорошо:**
+
+```js
+class Circle {
+    constructor(x, y, radius) {
+        this.x = x;
+        this.y = y;
+        this.radius = radius;
+    }
+
+    area() {
+        return Math.PI * this.radius * this.radius;
+    }
+}
+```
+
+**Плохо:**
+
+```js
+function Circle(x, y, radius) {
+    this.x = x;
+    this.y = y;
+    this.radius = radius;
+}
+
+Circle.prototype.area = function () {
+    return Math.PI * this.radius * this.radius;
+};
+```
+
+* После имени класса ставится пробел:
+
+**Хорошо:**
+
+```js
+class Circle {}
+```
+
+**Плохо:**
+
+```js
+class Circle{}
+```
+
+* После имени метода пробел не ставится:
+
+**Хорошо:**
+
+```js
+class Circle {
+    area() {}
+}
+```
+
+**Плохо:**
+
+```js
+class Circle {
+    area () {}
+}
+```
+
+* Перед открывающей фигурной скобкой тела метода ставится пробел:
+
+**Плохо:**
+
+```js
+class Circle {
+    area(){}
+}
+```
+
+* Конструктор (если cуществует) является первым методом в классе:
+
+**Хорошо:**
+
+```js
+class Circle {
+    constructor() {}
+
+    area() {}
+}
+```
+
+**Плохо:**
+
+```js
+class Circle {
+    area() {}
+
+    constructor() {}
+}
+```
+
+* Для наследования используется ключевое слово `extends`:
+
+**Хорошо:**
+
+```js
+class Stream extends EventEmitter {}
+```
+
+**Плохо:**
+
+```js
+var util = require('util');
+
+class Stream() {
+    constructor() {
+        EventEmitter.call(this);
+    }
+}
+
+util.inherits(Stream, EventEmitter);
+```
+
+##<a name="24"></a>node.js
+
+###<a name="24-1"></a>Импортирование модулей
 
 * Все модули импортируются в начале файла сразу после описания к нему, если оно есть:
 
