@@ -33,10 +33,11 @@ JavaScript CodeStyle
   - [Контекст функции](#20)
   - [Комментарии](#21)
   - [Классы](#22)
-  - [ECMAScript 6](#23)
-    - [Classes](#23-1)
-  - [node.js](#24)
-    - [Импортирование модулей](#24-1)
+  - [Перечисления](#23)
+  - [ECMAScript 6](#24)
+    - [Classes](#24-1)
+  - [node.js](#25)
+    - [Импортирование модулей](#25-1)
 
 ##<a name="1"></a>Именование
 
@@ -51,6 +52,7 @@ JavaScript CodeStyle
   * `functionNamesLikeThis`
   * `functionArgumentsLikeThis`
   * `ClassNamesLikeThis`
+  * `EnumNamesLikeThis`
   * `methodNamesLikeThis`
   * `CONSTANTS_LIKE_THIS`
   * `namespaceLikeThis`
@@ -578,9 +580,21 @@ var FooClass = inherit({
 });
 ```
 
-##<a name="23"></a>ECMAScript 6
+##<a name="23"></a>Перечисления
 
-###<a name="23-1"></a>Классы
+* Перечисления именуются в стиле `UpperCamelCase`.
+* Значения именуются в стиле `ALL_CAPS`.
+
+```js
+var Color = {
+    BLUE: '#0000dd',
+    RED: '#dd0000'
+};
+```
+
+##<a name="24"></a>ECMAScript 6
+
+###<a name="24-1"></a>Классы
 
 * Для определения класса используется ключевое слово `class`:
 
@@ -700,9 +714,9 @@ class Stream() {
 util.inherits(Stream, EventEmitter);
 ```
 
-##<a name="24"></a>node.js
+##<a name="25"></a>node.js
 
-###<a name="24-1"></a>Импортирование модулей
+###<a name="25-1"></a>Импортирование модулей
 
 * Все модули импортируются в начале файла сразу после описания к нему, если оно есть:
 
