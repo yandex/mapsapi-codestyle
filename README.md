@@ -39,6 +39,7 @@ JavaScript CodeStyle
     - [Classes](#classes-1)
   - [Node.js](#nodejs)
     - [Importing Modules](#importing-modules)
+  - [Licence](#licence)
 
 ##General
 
@@ -734,3 +735,7 @@ This rule does not apply to modules that are imported "on demand".
 1. Standard node.js modules (i.e. fs, util, etc.).
 2. External lib modules.
 3. Modules of the current application.
+
+## Licence
+
+[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
