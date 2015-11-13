@@ -37,7 +37,7 @@ JavaScript CodeStyle
   - [ECMAScript 6](#ecmascript-6)
     - [Variable declaration](#variable-declaration-1)
     - [Classes](#classes-1)
-  - [node.js](#nodejs)
+  - [Node.js](#nodejs)
     - [Importing Modules](#importing-modules)
 
 ##General
@@ -702,7 +702,7 @@ class Circle{}
 
 * There should be no whitespace after method name:
 
-##node.js
+##Node.js
 
 ###Importing Modules
   * Modules should be imported in the beginning of the file, after the description of the module (if present):
