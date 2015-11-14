@@ -703,6 +703,76 @@ class Circle{}
 
 * There should be no whitespace after method name:
 
+**Good:**
+
+```js
+class Circle {
+    area() {}
+}
+```
+
+**Bad:**
+
+```js
+class Circle {
+    area () {}
+}
+```
+
+* There should be one whitespace before the opening curly brace of method's body:
+
+**Bad:**
+
+```js
+class Circle {
+    area(){}
+}
+```
+
+* The constructor (if exists) should be the first method in a class definition:
+
+**Good:**
+
+```js
+class Circle {
+    constructor() {}
+
+    area() {}
+}
+```
+
+**Bad:**
+
+```js
+class Circle {
+    area() {}
+
+    constructor() {}
+}
+```
+
+* For inheritance the `extends` keyword should be used:
+
+**Good:**
+
+```js
+class Stream extends EventEmitter {}
+```
+
+**Bad:**
+
+```js
+var util = require('util');
+
+class Stream() {
+    constructor() {
+        EventEmitter.call(this);
+    }
+}
+
+util.inherits(Stream, EventEmitter);
+```
+
 ##Node.js
 
 ###Importing Modules
