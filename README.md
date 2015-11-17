@@ -1,5 +1,8 @@
 JavaScript CodeStyle
 ====================
+
+## Table of Contents
+
   - [General](#general)
   - [Naming](#naming)
   - [Variable declaration](#variable-declaration)
@@ -50,6 +53,8 @@ JavaScript CodeStyle
   * Lines should be no longer than 120 characters.
   * Trailing whitespace at the end of lines should be removed.
 
+[⬆ back to TOC](#table-of-contents)
+
 ##Naming
   * `variableNamesLikeThis`
   * `functionNamesLikeThis`
@@ -63,6 +68,8 @@ JavaScript CodeStyle
   * `private` or `protected` properties and methods should be prefixed with a single `_` character
   * Shortened and abbreviated names should be avoided.
   * Common abbreviations, such as `JSON` and `XML` are written in `CamelCase`. For example: `Json`, `Xml`.
+
+[⬆ back to TOC](#table-of-contents)
 
 ##Variable declaration
   * Each variable should be declared:
@@ -97,6 +104,8 @@ while (items.length) {
     object[key] = values.pop();
 }
 ```
+
+[⬆ back to TOC](#table-of-contents)
 
 ##Literals
 
@@ -155,12 +164,16 @@ var obj = {
 };
 ```
 
+[⬆ back to TOC](#table-of-contents)
+
 ###Arrays
   * When enumerating elements in an array literal, spaces should be typed after the comma only:
 
 ```javascript
 var fellowship = ['foo', 'bar', 'baz'];
 ```
+
+[⬆ back to TOC](#table-of-contents)
 
 ###Strings
   * String literals should use single quotes:
@@ -174,8 +187,12 @@ var lyrics = 'Never gonna give you up. Never gonna let you down. Never gonna tur
 var test = 'It shouldn\'t fail';
 ```
 
+[⬆ back to TOC](#table-of-contents)
+
 ##Semicolons
 Statements should always end with a semicolon.
+
+[⬆ back to TOC](#table-of-contents)
 
 ##Keywords
   * Keywords are always followed by a single space character:
@@ -198,6 +215,8 @@ var bar = function () {
 ```javascript
 return;
 ```
+
+[⬆ back to TOC](#table-of-contents)
 
 ##Block Statements
   * The opening curly brace should be on the same line and separated with one space character:
@@ -230,6 +249,8 @@ if (test) return;
 
 if (test) { return; }
 ```
+
+[⬆ back to TOC](#table-of-contents)
 
 ##Conditional Statements
 ###if
@@ -303,6 +324,8 @@ if ('driving' === getType()) {
 }
 ```
 
+[⬆ back to TOC](#table-of-contents)
+
 ###switch
 The switch statement should be written as in the example:
 
@@ -322,6 +345,8 @@ switch (value) {
 }
 ```
 
+[⬆ back to TOC](#table-of-contents)
+
 ##Loops
 ###for
 If possible, [Array.prototype.forEach](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) should be used instead of a `for` loop.
@@ -333,6 +358,8 @@ If possible, [Array.prototype.forEach](https://developer.mozilla.org/en/docs/Web
 ```
 Performance-critical parts of the code can use a `for` statement.
 
+[⬆ back to TOC](#table-of-contents)
+
 ###for (var i in obj)
 If possible, [Object.keys](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys) should be used instead of a `for-in` construction.
 ```javascript
@@ -341,13 +368,19 @@ Object.keys(obj).forEach(function (key) {
 });
 ```
 
+[⬆ back to TOC](#table-of-contents)
+
 ##Operators
 ###'with' operator
 
 The `with` operator should not be used.
 
+[⬆ back to TOC](#table-of-contents)
+
 ###Comparison Operators
 If there is no need for type casting, the strict equality operator `===` (or strict inequality `!==`) should be used.
+
+[⬆ back to TOC](#table-of-contents)
 
 ###Ternary Operator
 The ternary operator should be written as in the examples:
@@ -363,6 +396,8 @@ var z = a ?
     moreComplicatedC;
 ```
 
+[⬆ back to TOC](#table-of-contents)
+
 ###Unary Operators
 Unary operators should be typed without whitespace between them and their operands:
 ```javascript
@@ -370,9 +405,13 @@ var foo = !bar;
 ```
 Exceptions from this rule are the unary [special JS operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Special_operators)).
 
+[⬆ back to TOC](#table-of-contents)
+
 ##eval
 The `eval` function should be avoided.
 `json` serialized data should be parsed with [JSON.parse](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/JSON/parse).
+
+[⬆ back to TOC](#table-of-contents)
 
 ##undefined
 Checking for `undefined` values should be done using the strict equality operator.
@@ -389,9 +428,13 @@ typeof x === 'undefined'
 x === void 0
 ```
 
+[⬆ back to TOC](#table-of-contents)
+
 ##Parentheses
   * Should be used only if it is required of the expression's syntax or semantics.
   * Should not be used with the unary operators `delete`, `typeof` and `void`, or with the keywords `return`, `throw` and `new`.
+
+[⬆ back to TOC](#table-of-contents)
 
 ##Exceptions
 `throw` should be used with `new Error` or an object of a class derived from `Error`:
@@ -404,6 +447,8 @@ throw new Error('msg');
 ```javascript
 throw 'msg';
 ```
+
+[⬆ back to TOC](#table-of-contents)
 
 ##Type Casting
 Type casting should be done explicitly:
@@ -422,6 +467,8 @@ String(baz)
 baz + ''
 ~[].indexOf(qux)
 ```
+
+[⬆ back to TOC](#table-of-contents)
 
 ##Multi-Line Statements
   * If a statement is longer than the maximum [line length](#general), it is split into several lines and properly indented.
@@ -453,6 +500,8 @@ DoSomethingThatRequiresALongFunctionName(
 anotherStatement;
 ```
 
+[⬆ back to TOC](#table-of-contents)
+
 ##Method Chaining
 When a method is called on a new line, it should:
   * Be one indentation level deeper than the target object.
@@ -481,6 +530,8 @@ someObject
 .end();
 ```
 
+[⬆ back to TOC](#table-of-contents)
+
 ##String concatenation
   * Strings should be concatenated with the `+` operator.
   * The `[].join('')` should be avoided.
@@ -505,6 +556,8 @@ var foo = 'A rather long string of English text, an error message \
           just gravy.  Have a nice day.';
 ```
 
+[⬆ back to TOC](#table-of-contents)
+
 ##Empty Lines
 A single empty line can be used as a separator for grouping the code into logical blocks:
 
@@ -517,6 +570,8 @@ nowDoSomethingWith(y);
 
 andNowWith(z);
 ```
+
+[⬆ back to TOC](#table-of-contents)
 
 ##Function Context
 * Binding the context variable for function calls should be done using [Function.prototype.bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind):
@@ -554,9 +609,13 @@ doAsync(function () {
 });
 ```
 
+[⬆ back to TOC](#table-of-contents)
+
 ##Comments
   * In-line comments should start with `//`. Between the `//` and the text of the comment should be one space character.
   * Comments for functions, classes, etc. should be written according to the [jsdoc](http://usejsdoc.org/) documentation syntax.
+
+[⬆ back to TOC](#table-of-contents)
 
 ##Classes
   * "Symmetrical" methods should be declared one after the other. For example:
@@ -572,6 +631,8 @@ var FooClass = inherit({
 });
 ```
 
+[⬆ back to TOC](#table-of-contents)
+
 ## Enums
 
 * Enum names should be in `UpperCamelCase`.
@@ -583,6 +644,8 @@ var Color = {
     RED: '#dd0000'
 };
 ```
+
+[⬆ back to TOC](#table-of-contents)
 
 ## ECMAScript 6
 
@@ -652,6 +715,8 @@ query.param = 'value';
 let query = {};
 query.param = 'value';
 ```
+
+[⬆ back to TOC](#table-of-contents)
 
 ### Classes
 
@@ -773,6 +838,8 @@ class Stream() {
 util.inherits(Stream, EventEmitter);
 ```
 
+[⬆ back to TOC](#table-of-contents)
+
 ##Node.js
 
 ###Importing Modules
@@ -806,6 +873,10 @@ This rule does not apply to modules that are imported "on demand".
 2. External lib modules.
 3. Modules of the current application.
 
+[⬆ back to TOC](#table-of-contents)
+
 ## Licence
 
 [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
+
+[⬆ back to TOC](#table-of-contents)
