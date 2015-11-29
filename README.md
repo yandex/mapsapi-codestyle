@@ -40,6 +40,7 @@ JavaScript CodeStyle
   - [ECMAScript 6](#ecmascript-6)
     - [Variable declaration](#variable-declaration-1)
     - [Classes](#classes-1)
+    - [Generators](#generators)
   - [Node.js](#nodejs)
     - [Importing Modules](#importing-modules)
   - [Licence](#licence)
@@ -862,6 +863,75 @@ class Stream() {
 }
 
 util.inherits(Stream, EventEmitter);
+```
+
+[⬆ back to TOC](#table-of-contents)
+
+## Generators
+
+* The asterisk `*` in a [generator declaration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*)
+should be sticked to the `function` keyword:
+
+**Good:**
+
+```js
+function* createIterator() {
+    yield 1;
+}
+
+const createIterator = function* () {
+    yield 1;
+};
+```
+
+**Bad:**
+
+```js
+function *createIterator() {
+    yield 1;
+}
+
+const createIterator = function * () {
+    yield 1;
+};
+```
+
+* In a [shorthand method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions)
+the asterisk should be sticked to the `method name`:
+
+**Good:**
+
+```js
+class Graph {
+    *edges() {}
+}
+```
+
+**Bad:**
+
+```js
+class Graph {
+    * edges() {}
+}
+```
+
+* In an [yield* expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield*)
+the asterisk should be sticked to the `yield` keyword:
+
+**Good:**
+
+```js
+function* gen() {
+    yield* anotherGen();
+}
+```
+
+**Bad:**
+
+```js
+function* gen() {
+    yield *anotherGen();
+}
 ```
 
 [⬆ back to TOC](#table-of-contents)
