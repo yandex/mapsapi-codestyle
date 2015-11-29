@@ -431,8 +431,34 @@ x === void 0
 [⬆ back to TOC](#table-of-contents)
 
 ##Parentheses
-  * Should be used only if it is required of the expression's syntax or semantics.
-  * Should not be used with the unary operators `delete`, `typeof` and `void`, or with the keywords `return`, `throw` and `new`.
+
+* Should not be used with the unary operators `delete`, `typeof` and `void`, or with the keywords `return`, `throw` and `new`:
+
+**Good**:
+
+```js
+delete obj.key;
+typeof x === 'number';
+new Type();
+throw new Error();
+```
+
+**Bad**:
+
+```js
+delete(obj.key);
+typeof(x) === 'number';
+new(Type)();
+throw(new Error());
+```
+
+* Explicit parentheses in logical or mathematical expressions can be used to increase readability:
+
+**Good**:
+
+```js
+((a - b > c) && c) || (c + d && d + 1) || e; // equivalent to a - b > c && c || c + d && d + 1 || e
+```
 
 [⬆ back to TOC](#table-of-contents)
 
