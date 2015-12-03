@@ -38,6 +38,7 @@ JavaScript CodeStyle
   - [Classes](#classes)
   - [Enums](#enums)
   - [ECMAScript 6](#ecmascript-6)
+    - [Strict mode](#strict-mode)
     - [Variable declaration](#variable-declaration-1)
     - [Classes](#classes-1)
     - [Generators](#generators)
@@ -677,6 +678,52 @@ var Color = {
 ## ECMAScript 6
 
 This section describes code style for [ECMAScript 2015 Language Specification](http://www.ecma-international.org/publications/standards/Ecma-262.htm).
+
+### Strict mode
+
+* [Strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode) should be used.
+
+  *Explanation:*
+
+  * It prevents nasty [bugs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode#Changes_in_strict_mode).
+  * Many useful features of language (e.g. [classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes), [let declaration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let), block scopes) are available only in strict mode.
+  * [ES6 modules](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/) are automatically strict mode code.
+
+* Strict mode should be enabled explicity using the `'use strict'` pragma.
+
+  *Explanation:* dependencies of your code may not work in `strict mode`.
+
+**Good**:
+
+```js
+/**
+ * app.js file
+ */
+
+'use strict';
+
+// code here
+```
+
+```
+node app.js
+```
+
+**Bad:**
+
+```js
+/**
+ * app.js file without 'use strict' pragma
+ */
+
+// code here
+```
+
+```
+node --use_strict app.js
+```
+
+[⬆ back to TOC](#table-of-contents)
 
 ### Variable declaration
 
