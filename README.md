@@ -691,7 +691,10 @@ This section describes code style for [ECMAScript 2015 Language Specification](h
 
 * Strict mode should be enabled explicity using the `'use strict'` pragma.
 
-  *Explanation:* dependencies of your code may not work in `strict mode`.
+  *Explanation:*
+
+  * Dependencies of your code may not work in strict mode.
+  * Your code can be used in non-strict mode.
 
 **Good**:
 
