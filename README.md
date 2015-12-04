@@ -687,7 +687,8 @@ This section describes code style for [ECMAScript 2015 Language Specification](h
 
   * It prevents nasty [bugs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode#Changes_in_strict_mode).
   * Many useful features of language (e.g. [classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes), [let declaration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let), block scopes) are available only in strict mode.
-  * [ES6 modules](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/) are automatically strict mode code.
+  * It simplifies migration to [ES6 modules](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/),
+  because they are executed in strict mode.
 
 * Strict mode should be enabled explicity using the `'use strict'` pragma.
 
