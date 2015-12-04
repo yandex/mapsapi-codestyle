@@ -1,0 +1,22 @@
+{
+  "name": "eslint-config-loris",
+  "description": "ESLint config for Loris code style",
+  "version": "1.0.0-rc.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ymaps/codestyle"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": "Konstantin Ikonnikov <ikokostya@gmail.com>",
+  "contributors": [
+    "Konstantin Ikonnikov <ikokostya@gmail.com>",
+    "Alexander Tarmolov <tarmolov@gmail.com>"
+  ],
+  "peerDependencies": {
+    "eslint": ">=1.10.3 <2"
+  },
+  "license": "MIT"
+}
