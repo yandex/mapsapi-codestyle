@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "devDependencies": {
+    "doctoc": "~0.15.0"
+  },
+  "scripts": {
+    "toc": "doctoc README.md"
+  }
+}
