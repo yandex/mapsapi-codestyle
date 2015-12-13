@@ -89,7 +89,7 @@ JavaScript CodeStyle
   * Each `var` statement should have only one variable declared in it.
 
 **Good:**
-```javascript
+```js
 var keys = ['foo', 'bar'];
 var values = [23, 42];
 
@@ -101,7 +101,7 @@ while (items.length) {
 ```
 
 **Bad:**
-```javascript
+```js
 var keys = ['foo', 'bar'],
     values = [23, 42],
     object = {},
@@ -120,14 +120,14 @@ while (items.length) {
 ###Objects
   * There should be no whitespace after the opening and before the closing curly braces:
 
-```javascript
+```js
 var obj = {a: 1, b: 2, c: 3};
 
 this.method({a: 1, b: 2});
 ```
   * There should be no whitespace characters before the colon:
 
-```javascript
+```js
 var obj = {
     prop: 0
 };
@@ -136,7 +136,7 @@ var obj = {
 
 **Good:**
 
-```javascript
+```js
 var obj = {
     a: 0,
     b: 1,
@@ -145,7 +145,7 @@ var obj = {
 ```
 **Bad:**
 
-```javascript
+```js
 var obj = {
     a          : 0,
     b          : 1,
@@ -156,7 +156,7 @@ var obj = {
 
 **Good:**
 
-```javascript
+```js
 var obj = {
     key: 0,
     'key-key': 1
@@ -165,7 +165,7 @@ var obj = {
 
 **Bad:**
 
-```javascript
+```js
 var obj = {
     'key': 0,
     'key-key': 1
@@ -177,7 +177,7 @@ var obj = {
 ###Arrays
   * When enumerating elements in an array literal, spaces should be typed after the comma only:
 
-```javascript
+```js
 var fellowship = ['foo', 'bar', 'baz'];
 ```
 
@@ -186,12 +186,12 @@ var fellowship = ['foo', 'bar', 'baz'];
 ###Strings
   * String literals should use single quotes:
 
-```javascript
+```js
 var lyrics = 'Never gonna give you up. Never gonna let you down. Never gonna turn around and desert you.';
 ```
   * If a string contains a single quote character, it should be escaped:
 
-```javascript
+```js
 var test = 'It shouldn\'t fail';
 ```
 
@@ -205,7 +205,7 @@ Statements should always end with a semicolon.
 ##Keywords
   * Keywords are always followed by a single space character:
 
-```javascript
+```js
 if (test) {
     // ...
 }
@@ -220,7 +220,7 @@ var bar = function () {
 ```
   * If the keyword is followed by a semicolon, there should be no space between them:
 
-```javascript
+```js
 return;
 ```
 
@@ -229,7 +229,7 @@ return;
 ##Block Statements
   * The opening curly brace should be on the same line and separated with one space character:
 
-```javascript
+```js
 if (test) {
     // ...
 }
@@ -242,14 +242,14 @@ function foo() {
 
 **Good:**
 
-```javascript
+```js
 if (test) {
     return;
 }
 ```
 **Bad:**
 
-```javascript
+```js
 if (test)
     return;
 
@@ -264,7 +264,7 @@ if (test) { return; }
 ###if
   * The `else` keyword should be on the same line as the closing brace of the if-part of the statement:
 
-```javascript
+```js
 if (test) {
     // ...
 } else {
@@ -275,7 +275,7 @@ if (test) {
 
 **Good:**
 
-```javascript
+```js
 var foo = bar();
 if (foo > 0) {
     // ...
@@ -283,7 +283,7 @@ if (foo > 0) {
 ```
 
 **Bad:**
-```javascript
+```js
 var foo;
 if ((foo = bar()) > 0) {
     // ...
@@ -293,7 +293,7 @@ if ((foo = bar()) > 0) {
 
 **Good:**
 
-```javascript
+```js
 if (condition) {
     actionIfTrue();
 } else {
@@ -302,12 +302,12 @@ if (condition) {
 ```
 
 **Bad:**
-```javascript
+```js
 condition && actionIfTrue() || actionIfFalse();
 ```
   * Conditions longer than the [maximum line length](#general) should be divided as in the example:
 
-```javascript
+```js
 if (longCondition ||
     anotherLongCondition &&
     yetAnotherLongCondition
@@ -319,14 +319,14 @@ if (longCondition ||
  * [Yoda conditions](http://en.wikipedia.org/wiki/Yoda_conditions) should not be used:
 
 **Good:**
-```javascript
+```js
 if (getType() === 'driving') {
 
 }
 ```
 
 **Bad:**
-```javascript
+```js
 if ('driving' === getType()) {
 
 }
@@ -337,7 +337,7 @@ if ('driving' === getType()) {
 ###switch
 The switch statement should be written as in the example:
 
-```javascript
+```js
 switch (value) {
     case 1:
         // ...
@@ -359,7 +359,7 @@ switch (value) {
 ###for
 If possible, [Array.prototype.forEach](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) should be used instead of a `for` loop.
 
-```javascript
+```js
 [1, 2, 3].forEach(function (value) {
     console.log(value);
 });
@@ -370,7 +370,7 @@ Performance-critical parts of the code can use a `for` statement.
 
 ###for (var i in obj)
 If possible, [Object.keys](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys) should be used instead of a `for-in` construction.
-```javascript
+```js
 Object.keys(obj).forEach(function (key) {
     console.log(key);
 });
@@ -393,7 +393,7 @@ If there is no need for type casting, the strict equality operator `===` (or str
 ###Ternary Operator
 The ternary operator should be written as in the examples:
 
-```javascript
+```js
 var x = a ? b : c;
 
 var y = a ?
@@ -408,7 +408,7 @@ var z = a ?
 
 ###Unary Operators
 Unary operators should be typed without whitespace between them and their operands:
-```javascript
+```js
 var foo = !bar;
 ```
 Exceptions from this rule are the unary [special JS operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Special_operators)).
@@ -425,12 +425,12 @@ The `eval` function should be avoided.
 Checking for `undefined` values should be done using the strict equality operator.
 
 **Good:**
-```javascript
+```js
 x === undefined;
 ```
 
 **Bad:**
-```javascript
+```js
 typeof x === 'undefined'
 
 x === void 0
@@ -474,11 +474,11 @@ throw(new Error());
 `throw` should be used with `new Error` or an object of a class derived from `Error`:
 
 **Good:**
-```javascript
+```js
 throw new Error('msg');
 ```
 **Bad:**
-```javascript
+```js
 throw 'msg';
 ```
 
@@ -488,14 +488,14 @@ throw 'msg';
 Type casting should be done explicitly:
 
 **Good:**
-```javascript
+```js
 Boolean(foo)
 Number(bar)
 String(baz)
 [].indexOf(qux) === -1 or [].indexOf(qux) < 0
 ```
 **Bad:**
-```javascript
+```js
 !!foo
 +bar
 baz + ''
@@ -508,14 +508,14 @@ baz + ''
   * If a statement is longer than the maximum [line length](#general), it is split into several lines and properly indented.
   * Lines of the statement should be split after an operator:
 
-```javascript
+```js
 var debt = this.calculateBaseDebt() + this.calculateSharedDebt() + this.calculateDebtPayments() +
     this.calculateDebtFine();
 ```
   * Closing parentheses should be on a new line with the indentation of the current block statement:
 
 **Good:**
-```javascript
+```js
 DoSomethingThatRequiresALongFunctionName(
     veryLongArgument1,
     argument2,
@@ -525,7 +525,7 @@ DoSomethingThatRequiresALongFunctionName(
 anotherStatement;
 ```
 **Bad:**
-```javascript
+```js
 DoSomethingThatRequiresALongFunctionName(
     veryLongArgument1,
     argument2,
@@ -572,7 +572,7 @@ someObject
   * Escaping newline literals inside strings should be avoided.
 
 **Good:**
-```javascript
+```js
 var foo = 'A rather long string of English text, an error message ' +
     'actually that just keeps going and going -- an error ' +
     'message to make the Energizer bunny blush (right through ' +
@@ -581,7 +581,7 @@ var foo = 'A rather long string of English text, an error message ' +
     'just gravy.  Have a nice day.';
 ```
 **Bad:**
-```javascript
+```js
 var foo = 'A rather long string of English text, an error message \
           actually that just keeps going and going -- an error \
           message to make the Energizer bunny blush (right through \
@@ -595,7 +595,7 @@ var foo = 'A rather long string of English text, an error message \
 ##Empty Lines
 A single empty line can be used as a separator for grouping the code into logical blocks:
 
-```javascript
+```js
 doSomethingTo(x);
 doSomethingElseTo(x);
 andThen(x);
@@ -610,7 +610,7 @@ andNowWith(z);
 ##Function Context
 * Binding the context variable for function calls should be done using [Function.prototype.bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind):
 
-```javascript
+```js
 doAsync(function () {
     this.fn();
 }.bind(this));
@@ -620,7 +620,7 @@ doAsync(function () {
 
 **Good:**
 
-```javascript
+```js
 [1, 2, 3].forEach(function (n) {
     this.fn(n);
 }, this);
@@ -628,7 +628,7 @@ doAsync(function () {
 
 **Bad:**
 
-```javascript
+```js
 [1, 2, 3].forEach(function (n) {
     this.fn(n);
 }.bind(this));
@@ -636,7 +636,7 @@ doAsync(function () {
 
 * If assigning the current context to a variable, the variable should be named `_this`:
 
-```javascript
+```js
 var _this = this;
 doAsync(function () {
     _this.fn();
@@ -654,7 +654,7 @@ doAsync(function () {
 ##Classes
   * "Symmetrical" methods should be declared one after the other. For example:
 
-```javascript
+```js
 var FooClass = inherit({
     __constructor: function () {},
 
@@ -998,7 +998,7 @@ function* gen() {
 
 **Good:**
 
-```javascript
+```js
 var http = require('http');
 var fs = require('fs');
 
@@ -1006,7 +1006,7 @@ var fs = require('fs');
 ```
 **Bad:**
 
-```javascript
+```js
 var http = require('http');
 
 // code here
