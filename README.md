@@ -421,20 +421,56 @@ The `eval` function should be avoided.
 
 [⬆ back to TOC](#table-of-contents)
 
-##undefined
-Checking for `undefined` values should be done using the strict equality operator.
+## undefined
 
-**Good:**
-```js
-x === undefined;
-```
+* Checking for `undefined` value of declared variable (e.g. function argument) should be done by using the strict equality operator:
 
-**Bad:**
-```js
-typeof x === 'undefined'
+  > Explanation:
+  > * In modern browsers (`IE9+`, `Opera 12.16+`, `Firefox 4+`) [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
+  >   is immutable (a non-configurable, non-writable property of the global object).
+  > * It prevents undeclared variables usage.
 
-x === void 0
-```
+  **Good:**
+
+  ```js
+  x === undefined
+  ```
+
+  **Bad:**
+
+  ```js
+  typeof x === 'undefined'
+  x === void 0
+  ```
+
+  **Exceptions:**
+
+  * `typeof` should be used if you need to support old browsers (like `IE8`) where `window.undefined` property is mutable.
+  * `typeof` may be used in place where `string` type is expected:
+
+    ```js
+    switch (typeof x) {
+        case 'number':
+            // ...
+        case 'undefined':
+            // ...
+    }
+    ```
+
+* Checking for existence of a global variable should be done by using `typeof` operator or by checking existence of a property of the global object:
+
+  > Explanation: An attempt to access to undeclared variable will result an error.
+
+  ```js
+  if (typeof Reflect !== 'undefined') {
+      // ...
+  }
+
+  // Also okay for browser only code (`window` is unavailable in Node.js)
+  if (window.Reflect !== undefined) {
+      // ...
+  }
+  ```
 
 [⬆ back to TOC](#table-of-contents)
 
