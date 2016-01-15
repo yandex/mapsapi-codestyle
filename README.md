@@ -1184,7 +1184,7 @@ the asterisk should be sticked to the `yield` keyword:
   // code here
   ```
 
-  **Execption:** This rule does not apply to modules that are imported "on demand".
+  **Exception:** This rule does not apply to modules that are imported "on demand".
 
 * Module import calls should be grouped according to the following order:
 
