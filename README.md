@@ -131,7 +131,7 @@ while (items.length) {
   this.method({a: 1, b: 2});
   ```
 
-  * There should be no whitespace characters before the colon:
+* There should be no whitespace characters before the colon:
 
   ```js
   var obj = {
