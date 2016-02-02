@@ -29,6 +29,9 @@
   "scripts": {
     "test": "mocha test/**/*.test.js"
   },
+  "peerDependencies": {
+    "jscs": ">=2.4.0 <3"
+  },
   "devDependencies": {
     "jscs": "^2.4.0",
     "mocha": "^2.3.3"

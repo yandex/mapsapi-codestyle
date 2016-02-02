@@ -8,7 +8,7 @@
 ## Installation
 
 ```
-npm install jscs-preset-loris --save-dev
+npm install --save-dev jscs jscs-preset-loris
 ```
 
 ## Usage
