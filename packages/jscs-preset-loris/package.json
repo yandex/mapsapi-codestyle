@@ -1,0 +1,36 @@
+{
+  "name": "jscs-preset-loris",
+  "version": "1.0.0",
+  "description": "JSCS preset for Loris coding style.",
+  "keywords": [
+    "jscs",
+    "preset",
+    "jscs-preset"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ymaps/codestyle.git"
+  },
+  "contributors": [
+    {
+      "name": "Konstantin Ikonnikov",
+      "email": "ikokostya@gmail.com"
+    },
+    {
+      "name": "Alexander Tarmolov",
+      "email": "tarmolov@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "main": "./presets/preset.json",
+  "files": [
+    "presets"
+  ],
+  "scripts": {
+    "test": "mocha test/**/*.test.js"
+  },
+  "devDependencies": {
+    "jscs": "^2.4.0",
+    "mocha": "^2.3.3"
+  }
+}
