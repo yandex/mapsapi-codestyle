@@ -4,6 +4,6 @@
     "doctoc": "~0.15.0"
   },
   "scripts": {
-    "toc": "doctoc README.md"
+    "toc": "doctoc javascript.md"
   }
 }
