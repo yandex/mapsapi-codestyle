@@ -79,7 +79,7 @@
     ],
     "disallowYodaConditions": true,
 
-    "disallowSpacesInsideArrayBrackets": true,
+    "disallowSpacesInsideBrackets": true,
 
     "requireDotNotation": true,
     "disallowSpaceAfterObjectKeys": true,

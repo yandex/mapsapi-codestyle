@@ -40,6 +40,9 @@ var obj = {
 var fellowship = ['foo', 'bar', 'baz'];
 var nestedArr = [1, [2, 3]];
 
+// Disallow spaces before and after square brackets for property accessors.
+var prop = a[1];
+
 // String should have single quotes.
 var lyrics = 'Never gonna give you up, Never gonna let you down';
 var test = 'It shouldn\'t fail';
