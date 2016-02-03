@@ -1,4 +1,4 @@
-JavaScript CodeStyle
+JavaScript Code Style
 ====================
 
 ## Table of Contents
