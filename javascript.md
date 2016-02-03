@@ -498,12 +498,12 @@ The `eval` function should be avoided.
   > Explanation: An attempt to access to undeclared variable will result an error.
 
   ```js
-  if (typeof Reflect !== 'undefined') {
+  if (typeof Foo !== 'undefined') {
       // ...
   }
 
   // Also okay for browser only code (`window` is unavailable in Node.js)
-  if (window.Reflect !== undefined) {
+  if (window.Foo !== undefined) {
       // ...
   }
   ```
