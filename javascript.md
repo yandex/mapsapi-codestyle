@@ -45,6 +45,7 @@ JavaScript CodeStyle
   - [Strict mode](#strict-mode)
   - [Variable declaration](#variable-declaration-1)
   - [Classes](#classes-1)
+  - [Arrow functions](#arrow-functions)
   - [Generators](#generators)
 - [Node.js](#nodejs)
   - [Importing Modules](#importing-modules)
@@ -979,6 +980,68 @@ This section describes code style for [ECMAScript 2015 Language Specification](h
   }
 
   util.inherits(Stream, EventEmitter);
+  ```
+
+[⬆ back to TOC](#table-of-contents)
+
+### Arrow functions
+
+* [Arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+  should be used where an anonymous function is expected (when you need function and you don't want bind it to an
+  identifier):
+
+  > Explanation: Arrow functions capture the `this` value of the enclosing context. That prevents run-time errors with
+  > unexpected values of `this`. Also it's a more efficient method than binding `this` value using
+  > `Function.prototype.bind`.
+
+  ```js
+  [1, 2, 3].map((x) => {
+      // ...
+  });
+
+  // Use `function` here, because pass `someObj` as `this` argument.
+  [1, 2, 3].map(function (x) {
+      // ...
+  }, someObj);
+  ```
+
+* Always add parentheses around arrow function parameters:
+
+  > Explanation:
+  > * This style is consistent with cases when function takes zero or more than one parameters.
+  > * You need to alter the code less, if the number of parameters changes.
+
+  **Good:**
+
+  ```js
+  [1, 2, 3].map((x) => x * 2);
+  [1, 2, 3].reduce((acc, n) => acc + n);
+  ```
+
+  **Bad:**
+
+  ```js
+  [1, 2, 3].map(x => x * 2);
+  ```
+
+* Before and after an arrow function's arrow (`=>`) whitespace is required:
+
+  ```js
+  [1, 2, 3].map((x) => x * 2);
+  ```
+
+* If the function body consists of a single expression, braces should be omitted:
+
+  **Good:**
+
+  ```js
+  [1, 2, 3].map((x) => x * 2);
+  ```
+
+  **Bad:**
+
+  ```js
+  [1, 2, 3].map((x) => { return x * 2; });
   ```
 
 [⬆ back to TOC](#table-of-contents)
