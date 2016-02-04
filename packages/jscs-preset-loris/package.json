@@ -1,6 +1,6 @@
 {
   "name": "jscs-preset-loris",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JSCS preset for Loris coding style.",
   "keywords": [
     "jscs",
