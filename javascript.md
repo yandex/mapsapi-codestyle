@@ -46,6 +46,7 @@ JavaScript Code Style
   - [Variable declaration](#variable-declaration-1)
   - [Classes](#classes-1)
   - [Arrow functions](#arrow-functions)
+  - [Template strings](#template-strings)
   - [Generators](#generators)
 - [Node.js](#nodejs)
   - [Importing Modules](#importing-modules)
@@ -1042,6 +1043,24 @@ This section describes code style for [ECMAScript 2015 Language Specification](h
 
   ```js
   [1, 2, 3].map((x) => { return x * 2; });
+  ```
+
+[⬆ back to TOC](#table-of-contents)
+
+### Template strings
+
+* Spaces in placeholders (after `${` and before `}`) should not be used:
+
+  **Good:**
+
+  ```js
+  `Hello ${name}`
+  ```
+
+  **Bad:**
+
+  ```js
+  `Hello ${ name }`
   ```
 
 [⬆ back to TOC](#table-of-contents)
