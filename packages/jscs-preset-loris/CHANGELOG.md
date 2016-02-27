@@ -1,3 +1,7 @@
+## 1.1.0
+
+Use `disallowSpacesInsideBrackets` instead `disallowSpacesInsideArrayBrackets`.
+
 ## 1.0.1
 
 Add peer dependency from `jscs >=2.4.0 <3`.
