@@ -9,9 +9,6 @@ module.exports = {
         // http://eslint.org/docs/rules/#best-practices
         'no-loop-func': 0, // This is not a problem with `let` declarations.
 
-        // http://eslint.org/docs/rules/#strict-mode
-        'strict': [2, 'global'],
-
         // http://eslint.org/docs/rules/#ecmascript-6
         'arrow-parens': [2, 'always'],
         'arrow-spacing': [2, {before: true, after: true}],

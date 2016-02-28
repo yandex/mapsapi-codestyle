@@ -31,6 +31,9 @@ module.exports = {
         'radix': 2,
         'yoda': [2, 'never'],
 
+        // http://eslint.org/docs/rules/#strict-mode
+        'strict': [2, 'safe'],
+
         // http://eslint.org/docs/rules/#variables
         'no-delete-var': 2,
         'no-undef': 2,
