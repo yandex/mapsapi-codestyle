@@ -63,7 +63,7 @@ JavaScript Code Style
 * Lines should be no longer than 120 characters.
 * Trailing whitespace at the end of lines should be removed.
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ## Naming
 
@@ -80,7 +80,7 @@ JavaScript Code Style
 * Shortened and abbreviated names should be avoided.
 * Common abbreviations, such as `JSON` and `XML` are written in `CamelCase`. For example: `Json`, `Xml`.
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ## Variable declaration
 
@@ -119,7 +119,7 @@ while (items.length) {
 }
 ```
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ## Literals
 
@@ -183,7 +183,7 @@ while (items.length) {
   };
   ```
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ### Arrays
 
@@ -193,7 +193,7 @@ while (items.length) {
   var fellowship = ['foo', 'bar', 'baz'];
   ```
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ### Strings
 
@@ -209,13 +209,13 @@ while (items.length) {
   var test = 'It shouldn\'t fail';
   ```
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ## Semicolons
 
 Statements should always end with a semicolon.
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ## Keywords
 
@@ -241,7 +241,7 @@ Statements should always end with a semicolon.
   return;
   ```
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ## Block Statements
 
@@ -276,7 +276,7 @@ Statements should always end with a semicolon.
   if (test) { return; }
   ```
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ## Conditional Statements
 
@@ -357,7 +357,7 @@ Statements should always end with a semicolon.
   }
   ```
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ### switch
 
@@ -379,7 +379,7 @@ switch (value) {
 }
 ```
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ## Loops
 
@@ -394,7 +394,7 @@ If possible, [Array.prototype.forEach](https://developer.mozilla.org/en/docs/Web
 ```
 Performance-critical parts of the code can use a `for` statement.
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ### for (var i in obj)
 
@@ -406,7 +406,7 @@ Object.keys(obj).forEach(function (key) {
 });
 ```
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ## Operators
 
@@ -414,13 +414,13 @@ Object.keys(obj).forEach(function (key) {
 
 The `with` operator should not be used.
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ### Comparison Operators
 
 If there is no need for type casting, the strict equality operator `===` (or strict inequality `!==`) should be used.
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ### Ternary Operator
 
@@ -437,7 +437,7 @@ var z = a ?
     moreComplicatedC;
 ```
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ### Unary Operators
 
@@ -449,14 +449,14 @@ var foo = !bar;
 
 Exceptions from this rule are the unary [special JS operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Special_operators)).
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ## eval
 
 The `eval` function should be avoided.
 `json` serialized data should be parsed with [JSON.parse](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/JSON/parse).
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ## undefined
 
@@ -509,7 +509,7 @@ The `eval` function should be avoided.
   }
   ```
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ## Parentheses
 
@@ -539,7 +539,7 @@ The `eval` function should be avoided.
   ((a - b > c) && c) || (c + d && d + 1) || e; // equivalent to a - b > c && c || c + d && d + 1 || e
   ```
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ## Exceptions
 
@@ -557,7 +557,7 @@ throw new Error('msg');
 throw 'msg';
 ```
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ## Type Casting
 
@@ -581,7 +581,7 @@ baz + ''
 ~[].indexOf(qux)
 ```
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ## Multi-Line Statements
 
@@ -618,7 +618,7 @@ baz + ''
   anotherStatement;
   ```
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ## Method Chaining
 
@@ -649,7 +649,7 @@ someObject
 .end();
 ```
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ## String concatenation
 
@@ -679,7 +679,7 @@ var foo = 'A rather long string of English text, an error message \
           just gravy.  Have a nice day.';
 ```
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ## Empty Lines
 
@@ -695,7 +695,7 @@ nowDoSomethingWith(y);
 andNowWith(z);
 ```
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ## Function Context
 
@@ -734,14 +734,14 @@ andNowWith(z);
   });
   ```
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ## Comments
 
 * In-line comments should start with `//`. Between the `//` and the text of the comment should be one space character.
 * Comments for functions, classes, etc. should be written according to the [jsdoc](http://usejsdoc.org/) documentation syntax.
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ## Classes
 
@@ -758,7 +758,7 @@ andNowWith(z);
   });
   ```
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ## Enums
 
@@ -772,7 +772,7 @@ var Color = {
 };
 ```
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ## ECMAScript 6
 
@@ -794,7 +794,7 @@ This section describes code style for [ECMAScript 2015 Language Specification](h
   > * Dependencies of your code may not work in strict mode.
   > * Your code can be used in non-strict mode.
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ### Variable declaration
 
@@ -861,7 +861,7 @@ This section describes code style for [ECMAScript 2015 Language Specification](h
   query.param = 'value';
   ```
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ### Classes
 
@@ -983,7 +983,7 @@ This section describes code style for [ECMAScript 2015 Language Specification](h
   util.inherits(Stream, EventEmitter);
   ```
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ### Arrow functions
 
@@ -1045,7 +1045,7 @@ This section describes code style for [ECMAScript 2015 Language Specification](h
   [1, 2, 3].map((x) => { return x * 2; });
   ```
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ### Template strings
 
@@ -1063,7 +1063,7 @@ This section describes code style for [ECMAScript 2015 Language Specification](h
   `Hello ${ name }`
   ```
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ### Generators
 
@@ -1132,7 +1132,7 @@ the asterisk should be sticked to the `yield` keyword:
   }
   ```
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ##Node.js
 
@@ -1168,10 +1168,10 @@ the asterisk should be sticked to the `yield` keyword:
   2. External lib modules.
   3. Modules of the current application.
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
 
 ## Licence
 
 [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
 
-[⬆ back to TOC](#table-of-contents)
+[&#8593; back to TOC](#table-of-contents)
