@@ -37,8 +37,9 @@ JavaScript Code Style
 - [Method Chaining](#method-chaining)
 - [String concatenation](#string-concatenation)
 - [Empty Lines](#empty-lines)
-- [Function Context](#function-context)
 - [Comments](#comments)
+- [Functions](#functions)
+  - [this](#this)
 - [Classes](#classes)
 - [Enums](#enums)
 - [ECMAScript 6](#ecmascript-6)
@@ -48,8 +49,6 @@ JavaScript Code Style
   - [Arrow functions](#arrow-functions)
   - [Template strings](#template-strings)
   - [Generators](#generators)
-- [Node.js](#nodejs)
-  - [Importing Modules](#importing-modules)
 - [Licence](#licence)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -697,9 +696,18 @@ andNowWith(z);
 
 [&#8593; back to TOC](#table-of-contents)
 
-## Function Context
+## Comments
 
-* Binding the context variable for function calls should be done using [Function.prototype.bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind):
+* In-line comments should start with `//`. Between the `//` and the text of the comment should be one space character.
+* Comments for functions, classes, etc. should be written according to the [jsdoc](http://usejsdoc.org/) documentation syntax.
+
+[&#8593; back to TOC](#table-of-contents)
+
+## Functions
+
+### this
+
+* Binding the `this` value for function calls should be done using [Function.prototype.bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind):
 
   ```js
   doAsync(function () {
@@ -707,7 +715,9 @@ andNowWith(z);
   }.bind(this));
   ```
 
-* Preferably, the context argument should be used (if available):
+  **Note:** in ECMAScript 6 [arrow functions](#arrow-functions) are preferred.
+
+* Preferably, the argument for `this` value should be used (if available):
 
   **Good:**
 
@@ -725,7 +735,7 @@ andNowWith(z);
   }.bind(this));
   ```
 
-* If assigning the current context to a variable, the variable should be named `_this`:
+* If assigning the `this` value to a variable, the variable should be named `_this`:
 
   ```js
   var _this = this;
@@ -733,13 +743,6 @@ andNowWith(z);
       _this.fn();
   });
   ```
-
-[&#8593; back to TOC](#table-of-contents)
-
-## Comments
-
-* In-line comments should start with `//`. Between the `//` and the text of the comment should be one space character.
-* Comments for functions, classes, etc. should be written according to the [jsdoc](http://usejsdoc.org/) documentation syntax.
 
 [&#8593; back to TOC](#table-of-contents)
 
