@@ -33,7 +33,7 @@ JavaScript Code Style
 - [Parentheses](#parentheses)
 - [Exceptions](#exceptions)
 - [Type casting](#type-casting)
-- [Multi-line strings](#multi-line-strings)
+- [Multi-line statements](#multi-line-statements)
 - [Method chaining](#method-chaining)
 - [String concatenation](#string-concatenation)
 - [Empty lines](#empty-lines)
@@ -584,7 +584,7 @@ baz + ''
 
 [&#8593; back to TOC](#table-of-contents)
 
-## Multi-line strings
+## Multi-line statements
 
 * If a statement is longer than the maximum [line length](#general), it is split into several lines and properly indented.
 * Lines of the statement should be split after an operator:
