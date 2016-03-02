@@ -16,8 +16,8 @@ JavaScript Code Style
   - [Strings](#strings)
 - [Semicolons](#semicolons)
 - [Keywords](#keywords)
-- [Block Statements](#block-statements)
-- [Conditional Statements](#conditional-statements)
+- [Block statements](#block-statements)
+- [Conditional statements](#conditional-statements)
   - [if](#if)
   - [switch](#switch)
 - [Loops](#loops)
@@ -25,18 +25,18 @@ JavaScript Code Style
   - [for (var i in obj)](#for-var-i-in-obj)
 - [Operators](#operators)
   - ['with' operator](#with-operator)
-  - [Comparison Operators](#comparison-operators)
-  - [Ternary Operator](#ternary-operator)
-  - [Unary Operators](#unary-operators)
+  - [Comparison operators](#comparison-operators)
+  - [Ternary operator](#ternary-operator)
+  - [Unary operators](#unary-operators)
 - [eval](#eval)
 - [undefined](#undefined)
 - [Parentheses](#parentheses)
 - [Exceptions](#exceptions)
-- [Type Casting](#type-casting)
-- [Multi-Line Statements](#multi-line-statements)
-- [Method Chaining](#method-chaining)
+- [Type casting](#type-casting)
+- [Multi-line strings](#multi-line-strings)
+- [Method chaining](#method-chaining)
 - [String concatenation](#string-concatenation)
-- [Empty Lines](#empty-lines)
+- [Empty lines](#empty-lines)
 - [Comments](#comments)
 - [Functions](#functions)
   - [this](#this)
@@ -49,6 +49,8 @@ JavaScript Code Style
   - [Arrow functions](#arrow-functions)
   - [Template strings](#template-strings)
   - [Generators](#generators)
+- [Node.js](#nodejs)
+  - [Importing modules](#importing-modules)
 - [Licence](#licence)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -242,7 +244,7 @@ Statements should always end with a semicolon.
 
 [&#8593; back to TOC](#table-of-contents)
 
-## Block Statements
+## Block statements
 
 * The opening curly brace should be on the same line and separated with one space character:
 
@@ -277,7 +279,7 @@ Statements should always end with a semicolon.
 
 [&#8593; back to TOC](#table-of-contents)
 
-## Conditional Statements
+## Conditional statements
 
 ### if
 
@@ -415,13 +417,13 @@ The `with` operator should not be used.
 
 [&#8593; back to TOC](#table-of-contents)
 
-### Comparison Operators
+### Comparison operators
 
 If there is no need for type casting, the strict equality operator `===` (or strict inequality `!==`) should be used.
 
 [&#8593; back to TOC](#table-of-contents)
 
-### Ternary Operator
+### Ternary operator
 
 The ternary operator should be written as in the examples:
 
@@ -438,7 +440,7 @@ var z = a ?
 
 [&#8593; back to TOC](#table-of-contents)
 
-### Unary Operators
+### Unary operators
 
 Unary operators should be typed without whitespace between them and their operands:
 
@@ -558,7 +560,7 @@ throw 'msg';
 
 [&#8593; back to TOC](#table-of-contents)
 
-## Type Casting
+## Type casting
 
 Type casting should be done explicitly:
 
@@ -582,7 +584,7 @@ baz + ''
 
 [&#8593; back to TOC](#table-of-contents)
 
-## Multi-Line Statements
+## Multi-line strings
 
 * If a statement is longer than the maximum [line length](#general), it is split into several lines and properly indented.
 * Lines of the statement should be split after an operator:
@@ -619,7 +621,7 @@ baz + ''
 
 [&#8593; back to TOC](#table-of-contents)
 
-## Method Chaining
+## Method chaining
 
 When a method is called on a new line, it should:
   * Be one indentation level deeper than the target object.
@@ -680,7 +682,7 @@ var foo = 'A rather long string of English text, an error message \
 
 [&#8593; back to TOC](#table-of-contents)
 
-## Empty Lines
+## Empty lines
 
 A single empty line can be used as a separator for grouping the code into logical blocks:
 
@@ -1137,9 +1139,9 @@ the asterisk should be sticked to the `yield` keyword:
 
 [&#8593; back to TOC](#table-of-contents)
 
-##Node.js
+## Node.js
 
-###Importing Modules
+### Importing modules
 
 * Modules should be imported in the beginning of the file, after the description of the module (if present):
 
