@@ -40,6 +40,7 @@ JavaScript Code Style
 - [Comments](#comments)
 - [Functions](#functions)
   - [this](#this)
+  - [Return statement](#return-statement)
 - [Classes](#classes)
 - [Enums](#enums)
 - [ECMAScript 6](#ecmascript-6)
@@ -745,6 +746,37 @@ andNowWith(z);
       _this.fn();
   });
   ```
+
+[&#8593; back to TOC](#table-of-contents)
+
+### Return statement
+
+Assignment in return statement should be avoided:
+
+**Good:**
+
+```js
+var lazyCompute = (function () {
+    var result;
+    return function () {
+        if (!result) {
+            result = compute();
+        }
+        return result;
+    }
+}());
+```
+
+**Bad:**
+
+```js
+var lazyCompute = (function () {
+    var result;
+    return function () {
+        return result || (result = compute());
+    }
+}());
+```
 
 [&#8593; back to TOC](#table-of-contents)
 
