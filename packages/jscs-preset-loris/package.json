@@ -18,7 +18,7 @@
   "license": "MIT",
   "main": "./preset.json",
   "files": [
-    "presets"
+    "preset.json"
   ],
   "scripts": {
     "test": "mocha test/**/*.test.js"
