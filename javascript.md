@@ -20,9 +20,9 @@ JavaScript Code Style
 - [Conditional statements](#conditional-statements)
   - [if](#if)
   - [switch](#switch)
-- [Loops](#loops)
+- [Loop statements](#loop-statements)
   - [for](#for)
-  - [for (var i in obj)](#for-var-i-in-obj)
+  - [do...while](#dowhile)
 - [Operators](#operators)
   - ['with' operator](#with-operator)
   - [Comparison operators](#comparison-operators)
@@ -363,7 +363,7 @@ Statements should always end with a semicolon.
 
 ### switch
 
-The switch statement should be written as in the example:
+The `switch` statement should be written as in the example:
 
 ```js
 switch (value) {
@@ -383,30 +383,41 @@ switch (value) {
 
 [&#8593; back to TOC](#table-of-contents)
 
-## Loops
+## Loop statements
 
 ### for
 
-If possible, [Array.prototype.forEach](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) should be used instead of a `for` loop.
+* Expressions, enclosed in round parentheses, should be separated by space after semicolon:
 
-```js
-[1, 2, 3].forEach(function (value) {
-    console.log(value);
-});
-```
-Performance-critical parts of the code can use a `for` statement.
+  **Good:**
+
+  ```js
+  for (var i = 0; i < 10; i++) {
+      doSomething();
+  }
+  ```
+
+  **Bad:**
+
+  ```js
+  for (var i = 0 ; i < 10 ; i++) {
+      doSomething();
+  }
+  ```
+
+* Complicated expressions in round parentheses should be avoided.
 
 [&#8593; back to TOC](#table-of-contents)
 
-### for (var i in obj)
+### do...while
 
-If possible, [Object.keys](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys) should be used instead of a `for-in` construction.
+* `while` keyword should be on the same line as the closing brace (like in [conditional statements](#conditional-statements)):
 
-```js
-Object.keys(obj).forEach(function (key) {
-    console.log(key);
-});
-```
+  ```js
+  do {
+      statements;
+  } while (condition);
+  ```
 
 [&#8593; back to TOC](#table-of-contents)
 
