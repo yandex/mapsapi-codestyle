@@ -11,7 +11,7 @@ describe('preset', function () {
         checker = new Checker();
         checker.registerDefaultRules();
         checker.configure({
-            preset: '../../presets/preset.json'
+            preset: __dirname + '/../preset.json'
         });
     });
 

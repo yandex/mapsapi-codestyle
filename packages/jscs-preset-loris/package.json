@@ -16,7 +16,7 @@
     "Alexander Tarmolov <tarmolov@gmail.com>"
   ],
   "license": "MIT",
-  "main": "./presets/preset.json",
+  "main": "./preset.json",
   "files": [
     "presets"
   ],
