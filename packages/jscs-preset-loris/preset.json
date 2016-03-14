@@ -25,10 +25,7 @@
     ],
 
     "disallowSpaceAfterPrefixUnaryOperators": true,
-    "disallowSpaceBeforePostfixUnaryOperators": [
-        "++",
-        "--"
-    ],
+    "disallowSpaceBeforePostfixUnaryOperators": true,
     "requireSpaceBeforeBinaryOperators": true,
     "requireSpaceAfterBinaryOperators": true,
 
