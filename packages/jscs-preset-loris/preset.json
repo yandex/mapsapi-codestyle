@@ -60,9 +60,8 @@
         "beforeAlternate": true
     },
 
-    "disallowSpaceBeforeBinaryOperators": [
-        ","
-    ],
+    "disallowSpaceBeforeComma": true,
+    "requireSpaceAfterComma": true,
     "requireCommaBeforeLineBreak": true,
 
     "validateQuoteMarks": "'",
