@@ -21,13 +21,12 @@
     "preset.json"
   ],
   "scripts": {
-    "test": "mocha test/**/*.test.js"
+    "test": "jscs -c test/config.json test/sample.js"
   },
   "peerDependencies": {
     "jscs": ">=2.4.0 <3"
   },
   "devDependencies": {
-    "jscs": "^2.4.0",
-    "mocha": "^2.3.3"
+    "jscs": "^2.4.0"
   }
 }
