@@ -157,3 +157,13 @@ var add = function (message, line, column) {};
 
 // requireSpaceBetweenArguments
 console.log(1, 2);
+
+var anObject = {
+    // Disallow space after shorthand function name.
+    ok() {}
+};
+
+class Circle {
+    // Disallow space after method name.
+    area() {}
+}
