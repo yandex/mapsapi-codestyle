@@ -1,3 +1,7 @@
+## 1.1.2
+
+* Add `"allExpect": ["shorthand"]` option for [`requireSpacesInAnonymousFunctionExpression`][requireSpacesInAnonymousFunctionExpression] ([#62](https://github.com/ymaps/codestyle/issues/62))
+
 ## 1.1.1
 
 * Set [`disallowSpaceBeforePostfixUnaryOperators`][disallowSpaceBeforePostfixUnaryOperators] value to `true` ([#59](https://github.com/ymaps/codestyle/pull/59))
@@ -22,3 +26,4 @@ Initial release. Extracted from `JSCS v2.5.0`.
 [disallowSpaceBeforeComma]: http://jscs.info/rule/disallowSpaceBeforeComma.html
 [requireSpaceAfterComma]: http://jscs.info/rule/requireSpaceAfterComma.html
 [disallowSpaceBeforeBinaryOperators]: http://jscs.info/rule/disallowSpaceBeforeBinaryOperators.html
+[requireSpacesInAnonymousFunctionExpression]: http://jscs.info/rule/requireSpacesInAnonymousFunctionExpression
