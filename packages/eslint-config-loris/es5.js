@@ -98,7 +98,7 @@ module.exports = {
         'new-cap': [2, {capIsNew: false}],
         'new-parens': 2,
         'no-mixed-spaces-and-tabs': 2,
-        'no-multiple-empty-lines': 2,
+        'no-multiple-empty-lines': [2, {max: 1, maxEOF: 0}],
         'no-spaced-func': 2,
         'no-trailing-spaces': 2,
         'no-whitespace-before-property': 2,
