@@ -1,6 +1,6 @@
 ## 4.0.0
 
-* Improve [`no-multiple-empty-lines`][no-multiple-empty-lines] rule ([#63](https://github.com/ymaps/codestyle/pull/55)).
+* Improve [`no-multiple-empty-lines`][no-multiple-empty-lines] rule ([#63](https://github.com/ymaps/codestyle/pull/63)).
 
 ## 3.0.0
 
