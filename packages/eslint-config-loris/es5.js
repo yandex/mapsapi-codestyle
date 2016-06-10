@@ -90,6 +90,7 @@ module.exports = {
         'computed-property-spacing': [2, 'never'],
         'consistent-this': [2, '_this'],
         'eol-last': 2,
+        'id-match': [2, '^[a-zA-Z0-9_\$]*$', {'properties': true}],
         'indent': [2, 4, {SwitchCase: 1}],
         'key-spacing': [2, {beforeColon: false, afterColon: true}],
         'keyword-spacing': [2, {before: true, after: true}],
