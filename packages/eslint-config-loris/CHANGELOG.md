@@ -1,3 +1,7 @@
+## 5.0.0
+
+* Non-ASCII characters are not allowed in identifiers ([#64](https://github.com/ymaps/codestyle/pull/64)).
+
 ## 4.0.0
 
 * Improve [`no-multiple-empty-lines`][no-multiple-empty-lines] rule ([#63](https://github.com/ymaps/codestyle/pull/63)).
