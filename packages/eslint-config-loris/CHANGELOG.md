@@ -1,3 +1,7 @@
+## 5.1.0
+
+* Support `eslint v3`.
+
 ## 5.0.0
 
 * Non-ASCII characters are not allowed in identifiers ([#64](https://github.com/ymaps/codestyle/pull/64)).
