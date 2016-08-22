@@ -1,3 +1,7 @@
+## 1.2.0
+
+* Support `jscs v3`.
+
 ## 1.1.2
 
 * Add `"allExpect": ["shorthand"]` option for [`requireSpacesInAnonymousFunctionExpression`][requireSpacesInAnonymousFunctionExpression] ([#62](https://github.com/ymaps/codestyle/issues/62))

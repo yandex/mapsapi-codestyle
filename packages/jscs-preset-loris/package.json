@@ -1,6 +1,6 @@
 {
   "name": "jscs-preset-loris",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "JSCS preset for Loris coding style.",
   "keywords": [
     "jscs",
@@ -24,7 +24,7 @@
     "test": "jscs -c test/config.json test/sample.js"
   },
   "peerDependencies": {
-    "jscs": ">=2.4.0 <3"
+    "jscs": ">=2.4.0 <4"
   },
   "devDependencies": {
     "jscs": "^2.4.0"

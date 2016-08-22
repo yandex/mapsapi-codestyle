@@ -160,10 +160,14 @@ console.log(1, 2);
 
 var anObject = {
     // Disallow space after shorthand function name.
-    ok() {}
+    ok() {
+        return true;
+    }
 };
 
 class Circle {
     // Disallow space after method name.
-    area() {}
+    area() {
+        return 4;
+    }
 }
