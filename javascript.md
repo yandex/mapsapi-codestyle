@@ -49,6 +49,7 @@ JavaScript Code Style
   - [Classes](#classes-1)
   - [Arrow functions](#arrow-functions)
   - [Template strings](#template-strings)
+  - [Default parameters](#default-parameters)
   - [Generators](#generators)
 - [Node.js](#nodejs)
   - [Importing modules](#importing-modules)
@@ -1109,6 +1110,24 @@ This section describes code style for [ECMAScript 2015 Language Specification](h
 
   ```js
   `Hello ${ name }`
+  ```
+
+[&#8593; back to TOC](#table-of-contents)
+
+### Default parameters
+
+* Spaces around the `=` sign should be used:
+
+  **Good:**
+
+  ```js
+  function project(point, zoom = 23) {}
+  ```
+
+  **Bad:**
+
+  ```js
+  function project(point, zoom=23) {}
   ```
 
 [&#8593; back to TOC](#table-of-contents)
