@@ -50,6 +50,7 @@ JavaScript Code Style
   - [Arrow functions](#arrow-functions)
   - [Template strings](#template-strings)
   - [Default parameters](#default-parameters)
+  - [Destructuring assignment](#destructuring-assignment)
   - [Generators](#generators)
 - [Node.js](#nodejs)
   - [Importing modules](#importing-modules)
@@ -1128,6 +1129,57 @@ This section describes code style for [ECMAScript 2015 Language Specification](h
 
   ```js
   function project(point, zoom=23) {}
+  ```
+
+[&#8593; back to TOC](#table-of-contents)
+
+### Destructuring assignment
+
+* In [destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+  rules for [Objects](#objects) and [Arrays](#arrays) should be used:
+
+  **Good:**
+
+  ```js
+  const [a, b] = someArray;
+  const {a, b} = someObject;
+  ```
+
+  **Bad:**
+
+  ```js
+  const [ a, b ] = someArray;
+  const { a, b } = someObject;
+  ```
+
+* If some value in `array destructuring` is ignored, it should not be marked with space:
+
+  **Good:**
+
+  ```js
+  const [first,, third] = ['foo', 'bar', 'baz'];
+  const [,, third] = ['foo', 'bar', 'baz'];
+  ```
+
+  **Bad:**
+
+  ```js
+  const [first, , third] = ['foo', 'bar', 'baz'];
+  const [ , , third] = ['foo', 'bar', 'baz'];
+  ```
+
+* For default values spaces around `=` should be used:
+
+  **Good:**
+
+  ```js
+  function sendRequest({cache = true, timeout = 200}) {}
+  ```
+
+  **Bad:**
+
+  ```js
+  function sendRequest({cache=true, timeout=200}) {}
   ```
 
 [&#8593; back to TOC](#table-of-contents)
