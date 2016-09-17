@@ -17,6 +17,7 @@ module.exports = {
         'no-const-assign': 2,
         'no-dupe-class-members': 2,
         'no-this-before-super': 2,
+        'no-useless-computed-key': 2,
         'no-var': 2,
         'prefer-arrow-callback': 2,
         'prefer-const': 2,
