@@ -20,6 +20,9 @@ module.exports = {
         'no-var': 2,
         'prefer-arrow-callback': 2,
         'prefer-const': 2,
+        'prefer-rest-params': 2,
+        'prefer-spread': 2,
+        'rest-spread-spacing': [2, 'never'],
         'template-curly-spacing': [2, 'never'],
         'yield-star-spacing': [2, 'after']
     }
