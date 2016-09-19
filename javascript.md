@@ -187,6 +187,20 @@ while (items.length) {
   };
   ```
 
+* Spaces inside computed property brackets should not be used:
+
+  **Good:**
+
+  ```js
+  var value = obj[key];
+  ```
+
+  **Bad:**
+
+  ```js
+  var value = obj[ key ];
+  ```
+
 [&#8593; back to TOC](#table-of-contents)
 
 ### Arrays
