@@ -1033,6 +1033,9 @@ This section describes code style for [ECMAScript 2015 Language Specification](h
   util.inherits(Stream, EventEmitter);
   ```
 
+* If class method doesn't use `this` value, it should be made static function or moved outside
+  class scope.
+
 [&#8593; back to TOC](#table-of-contents)
 
 ### Arrow functions

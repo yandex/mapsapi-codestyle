@@ -7,6 +7,7 @@ module.exports = {
 
     rules: {
         // http://eslint.org/docs/rules/#best-practices
+        'class-methods-use-this': 2,
         'no-loop-func': 0, // This is not a problem with `let` declarations.
 
         // http://eslint.org/docs/rules/#ecmascript-6
