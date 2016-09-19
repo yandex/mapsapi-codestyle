@@ -51,6 +51,7 @@ JavaScript Code Style
   - [Template strings](#template-strings)
   - [Default parameters](#default-parameters)
   - [Destructuring assignment](#destructuring-assignment)
+  - [Rest parameters and spread operator](#rest-parameters-and-spread-operator)
   - [Generators](#generators)
 - [Node.js](#nodejs)
   - [Importing modules](#importing-modules)
@@ -1197,6 +1198,32 @@ This section describes code style for [ECMAScript 2015 Language Specification](h
 
   ```js
   function sendRequest({cache=true, timeout=200}) {}
+  ```
+
+[&#8593; back to TOC](#table-of-contents)
+
+### Rest parameters and spread operator
+
+* [Rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
+  should be preferred instead [arguments object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments).
+
+* [Spread operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator)
+  should be preferred instead [Function.prototype.apply](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply).
+
+* The space between `rest` or `spread` operator and their expressions should not be used:
+
+  **Good:**
+
+  ```js
+  let [head, ...tail] = someArray;
+  function foo(...args) {}
+  ```
+
+  **Bad:**
+
+  ```js
+  let [head, ... tail] = someArray;
+  function foo(... args) {}
   ```
 
 [&#8593; back to TOC](#table-of-contents)
