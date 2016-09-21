@@ -823,7 +823,7 @@ var lazyCompute = (function () {
   });
   ```
 
-* Constructor should not be used as factory function:
+* Constructor should not be used as a factory function:
 
   > Explanation:
   > * It makes code explicit.
