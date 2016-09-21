@@ -823,6 +823,26 @@ var lazyCompute = (function () {
   });
   ```
 
+* Constructor should not be used as a factory function:
+
+  > Explanation:
+  > * It makes code explicit.
+  > * It simplifies migration to [ES6 classes](#classes-1), because class constructors cannot be
+  >   invoked without `new`.
+
+  **Bad:**
+
+  ```js
+  function Foo(bar) {
+      if (!(this instanceof Foo)) {
+          return new Foo(bar);
+      }
+      // ...
+  }
+
+  var foo = Foo();
+  ```
+
 [&#8593; back to TOC](#table-of-contents)
 
 ## Enums
