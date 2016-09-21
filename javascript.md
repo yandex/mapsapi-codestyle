@@ -813,14 +813,12 @@ var lazyCompute = (function () {
 * "Symmetrical" methods should be declared one after the other. For example:
 
   ```js
-  var FooClass = inherit({
-      __constructor: function () {},
+  function Foo() {}
 
-      // destructors are placed right after the constructor
-      destruct: function () {},
+  // Destructors are placed right after the constructor.
+  Foo.prototype.destruct = function () {};
 
-      someMethod: function () {}
-  });
+  Foo.prototype.someMethod = function () {};
   ```
 
 * Constructor should not be used as a factory function:
