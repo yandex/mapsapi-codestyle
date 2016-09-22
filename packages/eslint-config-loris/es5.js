@@ -33,7 +33,6 @@ module.exports = {
         'no-alert': 2,
         'no-caller': 2,
         'no-case-declarations': 2,
-        'no-empty-pattern': 2,
         'no-eq-null': 2,
         'no-eval': 2,
         'no-extend-native': 2,
@@ -102,6 +101,7 @@ module.exports = {
         'no-mixed-spaces-and-tabs': 2,
         'no-multiple-empty-lines': [2, {max: 1, maxEOF: 0}],
         'no-spaced-func': 2,
+        'no-tabs': 2,
         'no-trailing-spaces': 2,
         'no-whitespace-before-property': 2,
         'object-curly-spacing': [2, 'never'],
@@ -115,6 +115,7 @@ module.exports = {
         'space-before-function-paren': [2, {anonymous: 'always', named: 'never'}],
         'space-in-parens': [2, 'never'],
         'space-infix-ops': 2,
-        'space-unary-ops': [2, {words: true, nonwords: false}]
+        'space-unary-ops': [2, {words: true, nonwords: false}],
+        'unicode-bom': 2
     }
 };
