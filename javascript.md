@@ -53,6 +53,7 @@ JavaScript Code Style
   - [Destructuring assignment](#destructuring-assignment)
   - [Rest parameters and spread operator](#rest-parameters-and-spread-operator)
   - [Generators](#generators)
+  - [Modules](#modules)
 - [Node.js](#nodejs)
   - [Importing modules](#importing-modules)
 - [Licence](#licence)
@@ -1218,6 +1219,28 @@ This section describes code style for [ECMAScript 2015 Language Specification](h
   function sendRequest({cache=true, timeout=200}) {}
   ```
 
+* Long destructuring patterns should be written as in the example:
+
+  ```js
+  const {
+      protocol,
+      hostname,
+      port,
+      pathname,
+      query
+  } = url.parse(urlString);
+
+  function formatUrl({
+      protocol,
+      hostname,
+      port,
+      pathname,
+      query
+  }) {
+      // ...
+  }
+  ```
+
 [&#8593; back to TOC](#table-of-contents)
 
 ### Rest parameters and spread operator
@@ -1311,6 +1334,22 @@ the asterisk should be sticked to the `yield` keyword:
   function* gen() {
       yield *anotherGen();
   }
+  ```
+
+[&#8593; back to TOC](#table-of-contents)
+
+### Modules
+
+* Long named imports should be written as in the example:
+
+  ```js
+  import {
+      name1 as localName1,
+      name2,
+      name3,
+      name4
+  } from 'src/foo';
+  import * as bar from 'src/bar';
   ```
 
 [&#8593; back to TOC](#table-of-contents)
