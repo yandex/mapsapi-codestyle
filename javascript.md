@@ -1349,7 +1349,6 @@ the asterisk should be sticked to the `yield` keyword:
       name3,
       name4
   } from 'src/foo';
-  import * as bar from 'src/bar';
   ```
 
 [&#8593; back to TOC](#table-of-contents)
