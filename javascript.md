@@ -1340,7 +1340,9 @@ the asterisk should be sticked to the `yield` keyword:
 
 ### Modules
 
-* Long named imports should be written as in the example:
+* Long named [imports](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
+  and [exports](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
+  should be written as in the examples:
 
   ```js
   import {
@@ -1349,6 +1351,13 @@ the asterisk should be sticked to the `yield` keyword:
       name3,
       name4
   } from 'src/foo';
+
+  export {
+      name1 as exportName1,
+      name2,
+      name3,
+      name4
+  };
   ```
 
 [&#8593; back to TOC](#table-of-contents)
