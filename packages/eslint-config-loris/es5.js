@@ -113,6 +113,7 @@ module.exports = {
         'one-var': [2, 'never'],
         'one-var-declaration-per-line': [2, 'always'],
         'operator-linebreak': [2, 'after'],
+        'padded-blocks': [2, 'never'],
         'quote-props': [2, 'as-needed'],
         'quotes': [2, 'single'],
         'semi': [2, 'always'],
