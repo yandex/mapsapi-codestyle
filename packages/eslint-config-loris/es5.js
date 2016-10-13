@@ -106,10 +106,6 @@ module.exports = {
         'no-tabs': 2,
         'no-trailing-spaces': 2,
         'no-whitespace-before-property': 2,
-        'object-curly-newline': [2, {
-            ObjectExpression: {multiline: true},
-            ObjectPattern: {multiline: true}
-        }],
         'object-curly-spacing': [2, 'never'],
         'one-var': [2, 'never'],
         'one-var-declaration-per-line': [2, 'always'],
