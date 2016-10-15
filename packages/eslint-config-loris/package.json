@@ -16,7 +16,7 @@
     "Alexander Tarmolov <tarmolov@gmail.com>"
   ],
   "peerDependencies": {
-    "eslint": ">=2 <4"
+    "eslint": "^3.2.0"
   },
   "license": "MIT"
 }
