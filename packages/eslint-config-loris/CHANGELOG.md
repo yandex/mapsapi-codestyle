@@ -1,7 +1,7 @@
 ## 6.0.0
 
-* Peer dependency from `eslint` was upgraded to `^3.2.0`. Please note that `eslint v3` doesn't
-  support `Node.js < 4`.
+* Peer dependency from `eslint` was upgraded to `^3.2.0`. Please note that `eslint v3` [doesn't
+  support](http://eslint.org/blog/2016/07/eslint-v3.0.0-released#requires-nodejs-4-or-higher) `Node.js < 4`.
 
 * Add new rules ([#67](https://github.com/ymaps/codestyle/issues/67)):
   * `es5`
