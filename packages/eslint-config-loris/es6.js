@@ -7,28 +7,28 @@ module.exports = {
 
     rules: {
         // http://eslint.org/docs/rules/#best-practices
-        'no-empty-pattern': 2,
-        'no-loop-func': 0, // This is not a problem with `let` declarations.
+        'no-empty-pattern': 'error',
+        'no-loop-func': 'off', // This is not a problem with `let` declarations.
 
         // http://eslint.org/docs/rules/#ecmascript-6
-        'arrow-parens': [2, 'always'],
-        'arrow-spacing': [2, {before: true, after: true}],
-        'constructor-super': 2,
-        'no-class-assign': 2,
-        'no-const-assign': 2,
-        'no-dupe-class-members': 2,
-        'no-new-symbol': 2,
-        'no-this-before-super': 2,
-        'no-useless-computed-key': 2,
-        'no-useless-constructor': 2,
-        'no-useless-rename': 2,
-        'no-var': 2,
-        'prefer-arrow-callback': 2,
-        'prefer-const': 2,
-        'prefer-rest-params': 2,
-        'prefer-spread': 2,
-        'rest-spread-spacing': [2, 'never'],
-        'template-curly-spacing': [2, 'never'],
-        'yield-star-spacing': [2, 'after']
+        'arrow-parens': ['error', 'always'],
+        'arrow-spacing': ['error', {before: true, after: true}],
+        'constructor-super': 'error',
+        'no-class-assign': 'error',
+        'no-const-assign': 'error',
+        'no-dupe-class-members': 'error',
+        'no-new-symbol': 'error',
+        'no-this-before-super': 'error',
+        'no-useless-computed-key': 'error',
+        'no-useless-constructor': 'error',
+        'no-useless-rename': 'error',
+        'no-var': 'error',
+        'prefer-arrow-callback': 'error',
+        'prefer-const': 'error',
+        'prefer-rest-params': 'error',
+        'prefer-spread': 'error',
+        'rest-spread-spacing': ['error', 'never'],
+        'template-curly-spacing': ['error', 'never'],
+        'yield-star-spacing': ['error', 'after']
     }
 };
