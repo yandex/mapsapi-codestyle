@@ -23,7 +23,7 @@ module.exports = {
         'no-useless-constructor': 'error',
         'no-useless-rename': 'error',
         'no-var': 'error',
-        'prefer-arrow-callback': 'error',
+        'prefer-arrow-callback': ['error', {allowNamedFunctions: true}],
         'prefer-const': 'error',
         'prefer-rest-params': 'error',
         'prefer-spread': 'error',

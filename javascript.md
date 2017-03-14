@@ -1088,6 +1088,11 @@ This section describes code style for [ECMAScript 2015 Language Specification](h
   [1, 2, 3].map(function (x) {
       // ...
   }, someObj);
+
+  // Use `function` here, because specify name.
+  decorate(function createSomething() {
+      // ...
+  });
   ```
 
 * Always add parentheses around arrow function parameters:
