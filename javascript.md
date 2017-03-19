@@ -81,7 +81,6 @@ JavaScript Code Style
 * `methodNamesLikeThis`
 * `CONSTANTS_LIKE_THIS`
 * `namespacesLikeThis`
-* `events-like-this`
 * `private` or `protected` properties and methods should be prefixed with a single `_` character
 * Shortened and abbreviated names should be avoided.
 * Common abbreviations, such as `JSON` and `XML` are written in `CamelCase`. For example: `Json`, `Xml`.
