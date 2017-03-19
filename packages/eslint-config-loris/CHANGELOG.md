@@ -1,3 +1,8 @@
+## 7.0.0
+
+* Allow named functions in [`prefer-arrow-callback`][prefer-arrow-callback] rule ([#80](https://github.com/ymaps/codestyle/pull/80)).
+* Use string severity codes ([#78](https://github.com/ymaps/codestyle/pull/78)).
+
 ## 6.0.0
 
 * Peer dependency from `eslint` was upgraded to `^3.2.0`. Please note that `eslint v3` [doesn't
@@ -63,3 +68,4 @@ Initial release.
 [no-empty-pattern]: http://eslint.org/docs/rules/no-empty-pattern
 [strict]: http://eslint.org/docs/rules/strict
 [no-multiple-empty-lines]: http://eslint.org/docs/rules/no-multiple-empty-lines
+[prefer-arrow-callback]: http://eslint.org/docs/rules/prefer-arrow-callback
