@@ -5,7 +5,7 @@ TypeScript Code Style
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 - [General](#general)
 - [Naming](#naming)
@@ -15,17 +15,35 @@ TypeScript Code Style
 
 ## General
 
-This style guide is generally the same as the one for JavaScript.
+This style guide extends existing [JavaScript style guide](javascript.md) and
+defines rules for TypeScript specific features.
 
 [&#8593; back to TOC](#table-of-contents)
 
 ## Naming
 
-* `IInterfaceLikeThis` — notice `I` in the beginning.
+* `InterfaceLikeThis`.
+* `TypeAliasLikeThis`.
 * In generics:
   * `K` is reserved for key-like data types;
   * `T` and `U` are reserved for generic data types;
-  * other generic parameters should have meaningfull names.
+  * other generic parameters should have meaningful names:
+
+  **Good**
+
+  ```ts
+  function foo<Attribute, State>(attributes: Attribute[], state: S): void {
+      /* ... */
+  }
+  ```
+
+  **Bad**
+
+  ```ts
+  function foo<A, S>(attributes: A[], state: S): void {
+      /* ... */
+  }
+  ```
 
 [&#8593; back to TOC](#table-of-contents)
 
@@ -58,7 +76,7 @@ This style guide is generally the same as the one for JavaScript.
   ```ts
   function find(): Object | undefined {
       /* ... */
-      return undefined;
+      return; // or `return undefined;` for the sake of being explicit.
   }
   ```
 
