@@ -23,7 +23,7 @@ defines rules for TypeScript specific features.
 
 ## Compiler Options
 
-`tsc` has some (options)[http://www.typescriptlang.org/docs/handbook/compiler-options.html]
+`tsc` has some [options](http://www.typescriptlang.org/docs/handbook/compiler-options.html)
 to make type checks stricter:
 
 * `noImplicitAny`;
