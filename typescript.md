@@ -8,6 +8,7 @@ TypeScript Code Style
 
 
 - [General](#general)
+- [Compiler Options](#compiler-options)
 - [Naming](#naming)
 - [Typing](#typing)
 
@@ -17,6 +18,23 @@ TypeScript Code Style
 
 This style guide extends existing [JavaScript style guide](javascript.md) and
 defines rules for TypeScript specific features.
+
+[&#8593; back to TOC](#table-of-contents)
+
+## Compiler Options
+
+`tsc` has some (options)[http://www.typescriptlang.org/docs/handbook/compiler-options.html]
+to make type checks stricter:
+
+* `noImplicitAny`;
+* `noImplicitReturns`;
+* `noUnusedLocals`;
+* `noUnusedParameters`;
+* `noImplicitThis`;
+* `strictNullChecks`.
+
+It's recommended to turn them on as early as possible in development (and migration
+from JS).
 
 [&#8593; back to TOC](#table-of-contents)
 
