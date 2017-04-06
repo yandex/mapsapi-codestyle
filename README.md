@@ -3,6 +3,7 @@
 ## Style guides
 
 * [JavaScript](javascript.md)
+* [TypeScript](typescript.md)
 
 ## Packages
 
