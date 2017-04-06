@@ -25,14 +25,15 @@ defines rules for TypeScript specific features.
 * `InterfaceLikeThis`.
 * `TypeAliasLikeThis`.
 * In generics:
-  * `K` is reserved for key-like data types;
+  * `K` and `V` are reserved for key-value generic data structures, `K` for key
+    types and `V` for value types;
   * `T` and `U` are reserved for generic data types;
   * other generic parameters should have meaningful names:
 
   **Good**
 
   ```ts
-  function foo<Attribute, State>(attributes: Attribute[], state: S): void {
+  function foo<Attribute, State>(attributes: Attribute[], state: State): void {
       /* ... */
   }
   ```
@@ -49,17 +50,21 @@ defines rules for TypeScript specific features.
 
 ## Typing
 
-* Don't use in-place structure definitions, create interfaces instead:
+* Prefer interfaces to in place structure definitions:
+
+  > Explanation:
+  > In place structure definitions make it unnecessary difficult to reuse a type.
+  > Also meaningful type names help to document code.
 
   **Good**
 
   ```ts
-  interface IPerson {
+  interface Person {
       name: string;
       age: number;
   }
 
-  let person: IPerson;
+  let person: Person;
   ```
 
   **Bad**
@@ -69,7 +74,20 @@ defines rules for TypeScript specific features.
   ```
 
 * Prefer interfaces to type aliases.
+
+  > Explanation:
+  > From [handbook](http://www.typescriptlang.org/docs/handbook/advanced-types.html):
+  > > ...interfaces create a new name that is used everywhere... [whereas]
+  > > ...type aliases don’t create a new name — for instance, error messages
+  > > won’t use the alias name.
+  >
+  > > ...type aliases cannot be extended or implemented from.
+
 * Don't use `void` for functions returning `undefined`:
+
+  > Explanation:
+  > * `void` means that a function doesn't return a value;
+  > * `void` isn't assignable to `undefined`.
 
   **Good**
 
