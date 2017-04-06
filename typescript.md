@@ -11,6 +11,7 @@ TypeScript Code Style
 - [Compiler Options](#compiler-options)
 - [Naming](#naming)
 - [Typing](#typing)
+- [Classes](#classes)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -121,6 +122,35 @@ from JS).
   ```ts
   function find(): Object | void {
       /* ... */
+  }
+  ```
+
+[&#8593; back to TOC](#table-of-contents)
+
+## Classes
+
+* Don't use `public` modifier for public class members:
+
+  > Explanation: In TypeScript, each member is public by default (like in JavaScript). Explicit
+  > public modifier is redundant.
+
+  **Good**
+
+  ```ts
+  class Foo {
+      publicProp: number;
+
+      publicMethod(): void {}
+  }
+  ```
+
+  **Bad**
+
+  ```ts
+  class Foo {
+      public publicProp: number;
+
+      public publicMethod(): void {}
   }
   ```
 
