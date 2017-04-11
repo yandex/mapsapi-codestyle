@@ -12,6 +12,7 @@ TypeScript Code Style
 - [Naming](#naming)
 - [Typing](#typing)
 - [Classes](#classes)
+- [Enums](#enums)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -153,5 +154,14 @@ from JS).
       public publicMethod(): void {}
   }
   ```
+
+[&#8593; back to TOC](#table-of-contents)
+
+## Enums
+
+* Use `const` enums whenever possible.
+
+  > Explanation: const enums can only use constant enum expressions and unlike regular enums they
+  > are completely removed during compilation. Const enum members are inlined at use sites.
 
 [&#8593; back to TOC](#table-of-contents)
