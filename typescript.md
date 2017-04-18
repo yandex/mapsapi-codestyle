@@ -162,7 +162,7 @@ from JS).
 * Prefer using const enums.
 
   > Explanation: const enums are completely removed during compilation. Const enum members are
-  > inlined at use places.
+  > inlined at places of use.
 
   If you need real objects in generated code, use non-const enums. E.g.:
 
