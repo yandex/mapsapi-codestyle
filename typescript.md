@@ -159,9 +159,16 @@ from JS).
 
 ## Enums
 
-* Use `const` enums whenever possible.
+* Prefer using const enums.
 
-  > Explanation: const enums can only use constant enum expressions and unlike regular enums they
-  > are completely removed during compilation. Const enum members are inlined at use sites.
+  > Explanation: const enums are completely removed during compilation. Const enum members are
+  > inlined at use places.
+
+  If you need real objects in generated code, use non-const enums. E.g.:
+
+  * enum contains computed members;
+  * enum should be printed (generated object stores both forward (`name -> value`) and reverse
+    (`value -> name`) mappings);
+  * enum should be available from JavaScript.
 
 [&#8593; back to TOC](#table-of-contents)
