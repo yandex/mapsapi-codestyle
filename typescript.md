@@ -12,6 +12,7 @@ TypeScript Code Style
 - [Naming](#naming)
 - [Typing](#typing)
 - [Classes](#classes)
+- [Enums](#enums)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -153,5 +154,21 @@ from JS).
       public publicMethod(): void {}
   }
   ```
+
+[&#8593; back to TOC](#table-of-contents)
+
+## Enums
+
+* Prefer using const enums.
+
+  > Explanation: const enums are completely removed during compilation. Const enum members are
+  > inlined at places of use.
+
+  If you need real objects in generated code, use non-const enums. E.g.:
+
+  * enum contains computed members;
+  * enum should be printed (generated object stores both forward (`name -> value`) and reverse
+    (`value -> name`) mappings);
+  * enum should be available from JavaScript.
 
 [&#8593; back to TOC](#table-of-contents)
