@@ -126,6 +126,20 @@ from JS).
   }
   ```
 
+* For array declaration use `T[]` notation:
+
+  **Good:**
+
+  ```ts
+  let pool: (LockableConnection<T> | null)[];
+  ```
+
+  **Bad:**
+
+  ```ts
+  let pool: Array<LockableConnection<T> | null>;
+  ```
+
 [&#8593; back to TOC](#table-of-contents)
 
 ## Classes
