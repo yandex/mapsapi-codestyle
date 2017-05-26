@@ -136,13 +136,13 @@ from JS).
   **Good:**
 
   ```ts
-  let pool: (LockableConnection<T> | null)[];
+  let pool: (LockableConnection | null)[];
   ```
 
   **Bad:**
 
   ```ts
-  let pool: Array<LockableConnection<T> | null>;
+  let pool: Array<LockableConnection | null>;
   ```
 
 [&#8593; back to TOC](#table-of-contents)
