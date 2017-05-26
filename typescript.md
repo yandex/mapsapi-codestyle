@@ -11,6 +11,7 @@ TypeScript Code Style
 - [Compiler Options](#compiler-options)
 - [Naming](#naming)
 - [Typing](#typing)
+- [Arrays](#arrays)
 - [Classes](#classes)
 - [Enums](#enums)
 
@@ -125,6 +126,10 @@ from JS).
       /* ... */
   }
   ```
+
+[&#8593; back to TOC](#table-of-contents)
+
+## Arrays
 
 * For array declaration use `T[]` notation:
 
