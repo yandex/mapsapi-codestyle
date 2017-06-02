@@ -11,6 +11,7 @@ TypeScript Code Style
 - [Compiler Options](#compiler-options)
 - [Naming](#naming)
 - [Typing](#typing)
+- [Arrays](#arrays)
 - [Classes](#classes)
 - [Enums](#enums)
 
@@ -124,6 +125,24 @@ from JS).
   function find(): Object | void {
       /* ... */
   }
+  ```
+
+[&#8593; back to TOC](#table-of-contents)
+
+## Arrays
+
+* For array declaration use `T[]` notation:
+
+  **Good:**
+
+  ```ts
+  let pool: (LockableConnection | null)[];
+  ```
+
+  **Bad:**
+
+  ```ts
+  let pool: Array<LockableConnection | null>;
   ```
 
 [&#8593; back to TOC](#table-of-contents)
