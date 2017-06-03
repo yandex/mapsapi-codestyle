@@ -113,7 +113,7 @@ from JS).
   **Good:**
 
   ```ts
-  function find(): Object | undefined {
+  function find(): object | undefined {
       // ...
       return; // or `return undefined;` for the sake of being explicit.
   }
@@ -122,7 +122,7 @@ from JS).
   **Bad:**
 
   ```ts
-  function find(): Object | void {
+  function find(): object | void {
       // ...
   }
   ```
