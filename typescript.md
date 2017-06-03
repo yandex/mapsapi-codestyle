@@ -51,7 +51,7 @@ from JS).
   * `T` and `U` are reserved for generic data types;
   * other generic parameters should have meaningful names:
 
-  **Good**
+  **Good:**
 
   ```ts
   function foo<Attribute, State>(attributes: Attribute[], state: State): void {
@@ -59,7 +59,7 @@ from JS).
   }
   ```
 
-  **Bad**
+  **Bad:**
 
   ```ts
   function foo<A, S>(attributes: A[], state: S): void {
@@ -77,7 +77,7 @@ from JS).
   > In place structure definitions make it unnecessary difficult to reuse a type.
   > Also meaningful type names help to document code.
 
-  **Good**
+  **Good:**
 
   ```ts
   interface Person {
@@ -88,7 +88,7 @@ from JS).
   let person: Person;
   ```
 
-  **Bad**
+  **Bad:**
 
   ```ts
   let person: {name: string, age: number};
@@ -110,7 +110,7 @@ from JS).
   > * `void` means that a function doesn't return a value;
   > * `void` isn't assignable to `undefined`.
 
-  **Good**
+  **Good:**
 
   ```ts
   function find(): Object | undefined {
@@ -119,7 +119,7 @@ from JS).
   }
   ```
 
-  **Bad**
+  **Bad:**
 
   ```ts
   function find(): Object | void {
@@ -154,7 +154,7 @@ from JS).
   > Explanation: In TypeScript, each member is public by default (like in JavaScript). Explicit
   > public modifier is redundant.
 
-  **Good**
+  **Good:**
 
   ```ts
   class Foo {
@@ -164,7 +164,7 @@ from JS).
   }
   ```
 
-  **Bad**
+  **Bad:**
 
   ```ts
   class Foo {
