@@ -55,7 +55,7 @@ from JS).
 
   ```ts
   function foo<Attribute, State>(attributes: Attribute[], state: State): void {
-      /* ... */
+      // ...
   }
   ```
 
@@ -63,7 +63,7 @@ from JS).
 
   ```ts
   function foo<A, S>(attributes: A[], state: S): void {
-      /* ... */
+      // ...
   }
   ```
 
@@ -114,7 +114,7 @@ from JS).
 
   ```ts
   function find(): Object | undefined {
-      /* ... */
+      // ...
       return; // or `return undefined;` for the sake of being explicit.
   }
   ```
@@ -123,7 +123,7 @@ from JS).
 
   ```ts
   function find(): Object | void {
-      /* ... */
+      // ...
   }
   ```
 
