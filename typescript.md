@@ -137,7 +137,7 @@ from JS).
   **Good:**
 
   ```ts
-  (<string>someValue).length;;
+  (<string>someValue).length;
   ```
 
   **Bad:**
