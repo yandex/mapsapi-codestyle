@@ -10,7 +10,7 @@ npm install --save-dev eslint eslint-config-loris
 
 ## Usage
 
-Include config in your [.eslintrc.js](https://eslint.org/docs/user-guide/configuring#configuration-file-formats) file:
+Include config in your [.eslintrc.js](http://eslint.org/docs/user-guide/configuring#configuration-file-formats) file:
 
 * For [ECMAScript 5](https://www.ecma-international.org/ecma-262/5.1/index.html)
 
