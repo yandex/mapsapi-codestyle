@@ -11,6 +11,7 @@ TypeScript Code Style
 - [Compiler Options](#compiler-options)
 - [Naming](#naming)
 - [Typing](#typing)
+- [Type assertions](#type-assertions)
 - [Arrays](#arrays)
 - [Classes](#classes)
 - [Enums](#enums)
@@ -128,6 +129,22 @@ from JS).
   ```
 
 [&#8593; back to TOC](#table-of-contents)
+
+## Type assertions
+
+* If you don't use `JSX`, use "angle-bracket" syntax:
+
+  **Good:**
+
+  ```ts
+  (<string>someValue).length;
+  ```
+
+  **Bad:**
+
+  ```ts
+  (someValue as string).length;
+  ```
 
 ## Arrays
 
