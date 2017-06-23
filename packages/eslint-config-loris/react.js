@@ -28,7 +28,7 @@ module.exports = {
         'react/no-direct-mutation-state': 'error',
         'react/no-find-dom-node': 'off',
         'react/no-is-mounted': 'error',
-        'react/no-multi-comp': 'warn',
+        'react/no-multi-comp': 'off',
         'react/no-redundant-should-component-update': 'off',
         'react/no-render-return-value': 'error',
         'react/no-set-state': 'off',
@@ -71,8 +71,7 @@ module.exports = {
         'react/jsx-no-undef': 'error',
         'react/jsx-pascal-case': 'error',
         'react/jsx-sort-props': 'off',
-        'react/jsx-space-before-closing': ['error', 'always'],
-        'react/jsx-tag-spacing': 'error',
+        'react/jsx-tag-spacing': ['error', {closingSlash: 'never', beforeSelfClosing: 'always', afterOpening: 'never'}],
         'react/jsx-uses-react': 'error',
         'react/jsx-uses-vars': 'error',
         'react/jsx-wrap-multilines': 'error'
