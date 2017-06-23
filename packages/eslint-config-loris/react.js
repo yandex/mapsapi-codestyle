@@ -13,7 +13,7 @@ module.exports = {
 
         // https://github.com/yannickcr/eslint-plugin-react#list-of-supported-rules
         'react/default-props-match-prop-types': 'off',
-        'react/display-name': 'error',
+        'react/display-name': 'off',
         'react/forbid-component-props': 'off',
         'react/forbid-elements': 'off',
         'react/forbid-prop-types': 'off',
@@ -38,7 +38,7 @@ module.exports = {
         'react/no-unused-prop-types': 'error',
         'react/no-will-update-set-state': 'error',
         'react/prefer-es6-class': ['error', 'always'],
-        'react/prefer-stateless-function': 'off',
+        'react/prefer-stateless-function': ['error', {ignorePureComponents: true}],
         'react/prop-types': 'error',
         'react/react-in-jsx-scope': 'off',
         'react/require-default-props': 'off',
