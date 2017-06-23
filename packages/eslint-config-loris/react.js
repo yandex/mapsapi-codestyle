@@ -35,7 +35,7 @@ module.exports = {
         'react/no-unknown-property': 'error',
         'react/no-unused-prop-types': 'error',
         'react/no-will-update-set-state': 'error',
-        'react/prefer-es6-class': 'off',
+        'react/prefer-es6-class': ['error', 'always'],
         'react/prefer-stateless-function': 'off',
         'react/prop-types': 'error',
         'react/react-in-jsx-scope': 'off',
