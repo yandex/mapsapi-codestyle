@@ -12,6 +12,7 @@ module.exports = {
         'jsx-quotes': ['error', 'prefer-double'],
 
         // https://github.com/yannickcr/eslint-plugin-react#list-of-supported-rules
+        'react/default-props-match-prop-types': 'off',
         'react/display-name': 'error',
         'react/forbid-component-props': 'off',
         'react/forbid-elements': 'off',
@@ -28,6 +29,7 @@ module.exports = {
         'react/no-find-dom-node': 'off',
         'react/no-is-mounted': 'error',
         'react/no-multi-comp': 'warn',
+        'react/no-redundant-should-component-update': 'off',
         'react/no-render-return-value': 'error',
         'react/no-set-state': 'off',
         'react/no-string-refs': 'error',
@@ -51,6 +53,7 @@ module.exports = {
         // https://github.com/yannickcr/eslint-plugin-react#jsx-specific-rules
         'react/jsx-boolean-value': ['error', 'never'],
         'react/jsx-closing-bracket-location': 'error',
+        'react/jsx-closing-tag-location': 'error',
         'react/jsx-curly-spacing': ['error', 'never', {'allowMultiline': true}],
         'react/jsx-equals-spacing': ['error', 'never'],
         'react/jsx-filename-extension': 'error',
