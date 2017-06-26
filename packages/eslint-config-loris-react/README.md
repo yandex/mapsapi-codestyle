@@ -4,7 +4,7 @@ ESLint config for [React JSX](https://facebook.github.io/react/docs/jsx-in-depth
 
 ## Installation
 
-First install [eslint-config-loris](../eslint-config-loris). Then
+First install [eslint-config-loris](../eslint-config-loris) package. Then
 
 ```
 npm install --save-dev eslint-plugin-react eslint-config-loris-react
