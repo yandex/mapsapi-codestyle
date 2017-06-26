@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config-loris",
-  "description": "ESLint config for Loris code style",
-  "version": "7.0.0",
+  "name": "eslint-config-loris-react",
+  "description": "ESLint config for Loris code style (React)",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/ymaps/codestyle"
@@ -12,11 +12,13 @@
   ],
   "author": "Konstantin Ikonnikov <ikokostya@gmail.com>",
   "contributors": [
+    "Igor Stepanov <sigorilla@yandex.ru>",
     "Konstantin Ikonnikov <ikokostya@gmail.com>",
     "Alexander Tarmolov <tarmolov@gmail.com>"
   ],
   "peerDependencies": {
-    "eslint": "^3.2.0"
+    "eslint": "^3.2.0",
+    "eslint-plugin-react": "^7.1.0"
   },
   "license": "MIT"
 }
