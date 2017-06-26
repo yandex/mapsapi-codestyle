@@ -30,23 +30,6 @@ module.exports = {
 };
 ```
 
-* For [React JSX](https://facebook.github.io/react/docs/jsx-in-depth.html)
-
-> Don't forget install [`eslint-plugin-react`](https://github.com/yannickcr/eslint-plugin-react).
->
-> ```sh
-> npm install --save-dev eslint-plugin-react
-> ```
-
-You can use this with one of main configurations, e.g. `loris/es5` or `loris/es6`.
-
-```js
-module.exports = {
-    extends: ['loris/es6', 'loris/react'],
-    root: true
-};
-```
-
 Note that configuration doesn't specify [environment](http://eslint.org/docs/user-guide/configuring#specifying-environments).
 You can easily add it like this:
 
