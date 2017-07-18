@@ -48,7 +48,7 @@ module.exports = {
         'no-iterator': 'error',
         'no-lone-blocks': 'error',
         'no-loop-func': 'error',
-        'no-multi-spaces': 'error',
+        'no-multi-spaces': ['error', {ignoreEOLComments: true}],
         'no-multi-str': 'error',
         'no-native-reassign': 'error',
         'no-new': 'error',
@@ -115,7 +115,11 @@ module.exports = {
         'quotes': ['error', 'single'],
         'semi': ['error', 'always'],
         'space-before-blocks': ['error', 'always'],
-        'space-before-function-paren': ['error', {anonymous: 'always', named: 'never'}],
+        'space-before-function-paren': ['error', {
+            anonymous: 'always',
+            named: 'never',
+            asyncArrow: 'always'
+        }],
         'space-in-parens': ['error', 'never'],
         'space-infix-ops': 'error',
         'space-unary-ops': ['error', {words: true, nonwords: false}],

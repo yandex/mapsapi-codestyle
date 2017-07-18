@@ -1,3 +1,7 @@
+## 8.0.0
+
+* Support `eslint 4.x`. See migration guide http://eslint.org/docs/user-guide/migrating-to-4.0.0
+
 ## 7.0.0
 
 * Allow named functions in [`prefer-arrow-callback`][prefer-arrow-callback] rule ([#80](https://github.com/ymaps/codestyle/pull/80)).

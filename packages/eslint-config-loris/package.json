@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-loris",
   "description": "ESLint config for Loris code style",
-  "version": "7.0.0",
+  "version": "8.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/ymaps/codestyle"
@@ -16,7 +16,7 @@
     "Alexander Tarmolov <tarmolov@gmail.com>"
   ],
   "peerDependencies": {
-    "eslint": "^3.2.0"
+    "eslint": "^4.0.0"
   },
   "license": "MIT"
 }
