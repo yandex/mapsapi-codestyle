@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-loris-react",
   "description": "ESLint config for Loris code style (React)",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/ymaps/codestyle"
