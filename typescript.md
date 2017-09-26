@@ -198,8 +198,9 @@ from JS).
   >   declaration to determine its visibility.
   > * Minimizes name conflicts with other public fields: after adding public field with the same
   >   name as private field, you don't need perform renaming.
-  > * Simplifies migration from JavaScript, where `_` often means internal fields.
-  > * Improve autocompletion.
+  > * Simplifies migration from JavaScript, where `_` often means "internal" fields.
+  > * Improves autocompletion by dictionary: when you type `_` the autocomplete popup shows
+  >   non-public fields.
 
   **Good:**
 
