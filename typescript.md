@@ -191,6 +191,37 @@ from JS).
   }
   ```
 
+* Prefix `private` and `protected` fields with `_`:
+
+  > Explanation:
+  > * Underscore specifies visual difference from public fields. So, you don't need to read the
+  >   field's declaration to determine its visibility.
+  > * Minimizes name conflicts with public fields: after adding public field with the same name as
+  >   private field, you don't need perform renaming.
+  > * Simplifies migration from JavaScript, where `_` often means that the field is "internal".
+  > * Improves autocompletion by dictionary: when you type `_` the autocomplete popup shows
+  >   non-public fields.
+
+  **Good:**
+
+  ```ts
+  class Foo {
+      private _prop: number;
+
+      protected _method(): void {}
+  }
+  ```
+
+  **Bad:**
+
+  ```ts
+  class Foo {
+      private prop: number;
+
+      protected method(): void {}
+  }
+  ```
+
 [&#8593; back to TOC](#table-of-contents)
 
 ## Enums
