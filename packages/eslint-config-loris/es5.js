@@ -114,6 +114,7 @@ module.exports = {
         'quote-props': ['error', 'as-needed'],
         'quotes': ['error', 'single'],
         'semi': ['error', 'always'],
+        'semi-style': ['error', 'last'],
         'space-before-blocks': ['error', 'always'],
         'space-before-function-paren': ['error', {
             anonymous: 'always',
@@ -123,6 +124,7 @@ module.exports = {
         'space-in-parens': ['error', 'never'],
         'space-infix-ops': 'error',
         'space-unary-ops': ['error', {words: true, nonwords: false}],
+        'switch-colon-spacing': ['error', {after: true, before: false}],
         'unicode-bom': 'error'
     }
 };
