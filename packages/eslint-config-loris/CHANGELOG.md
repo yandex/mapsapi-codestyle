@@ -1,3 +1,9 @@
+## 9.0.0
+
+* Add new rules to `es5` config ([#103](https://github.com/ymaps/codestyle/pull/103)):
+  * [`semi-style`][semi-style]
+  * [`switch-colon-spacing`][switch-colon-spacing]
+
 ## 8.0.0
 
 * Support `eslint 4.x`. See migration guide http://eslint.org/docs/user-guide/migrating-to-4.0.0
@@ -57,6 +63,8 @@
 
 Initial release.
 
+[semi-style]: https://eslint.org/docs/rules/semi-style
+[switch-colon-spacing]: https://eslint.org/docs/rules/switch-colon-spacing
 [unicode-bom]: http://eslint.org/docs/rules/unicode-bom
 [no-tabs]: http://eslint.org/docs/rules/no-tabs
 [no-duplicate-case]: http://eslint.org/docs/rules/no-duplicate-case
