@@ -239,3 +239,30 @@ from JS).
   * enum should be available from JavaScript.
 
 [&#8593; back to TOC](#table-of-contents)
+
+* For enum values use `UPPER_CASE` style.
+
+  **Good:**
+
+  ```ts
+  enum Foo {
+      BAR,
+      BAZ
+  }
+
+  enum Bar {
+      FOO = 'foo',
+      BAZ = 'baz'
+  }
+  ```
+
+  **Bad:**
+
+  ```ts
+  class Foo {
+      Bar,
+      Baz
+  }
+  ```
+
+[&#8593; back to TOC](#table-of-contents)
