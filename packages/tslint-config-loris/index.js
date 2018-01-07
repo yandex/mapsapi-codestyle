@@ -50,16 +50,12 @@ module.exports = {
         'no-unexpected-multiline': true,
         'no-unsafe-finally': true,
         'use-isnan': true,
-        'valid-typeof': true,
 
         // https://github.com/buzinas/tslint-eslint-rules#best-practices
         'curly': true,
         'triple-equals': true,
         'no-arg': true,
-        // Disable this rule, because it isn't configurable
-        // https://github.com/palantir/tslint/issues/1088
-        // https://github.com/palantir/tslint/issues/2107
-        //'no-empty': true,
+        'no-empty': [true, 'allow-empty-catch'],
         'no-eval': true,
         'no-multi-spaces': true,
         'no-duplicate-variable': [true, "check-parameters"],
@@ -74,8 +70,7 @@ module.exports = {
         'brace-style': [true, '1tbs'],
         'variable-name': [true, 'ban-keywords'],
         'eofline': true,
-        // TODO(ikokostya): Find easy way to disable rules in subdirectory.
-        'ter-indent': false, // [true, 4, {SwitchCase: 1}],
+        'ter-indent': [true, 4, {SwitchCase: 1}],
         'linebreak-style': [true, 'LF'],
         'ter-max-len': [true, {code: 120, ignoreUrls: true}],
         'new-parens': true,

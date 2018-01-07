@@ -11,4 +11,8 @@ List of npm packages that help check code style in your project:
 
 * [eslint-config-loris](packages/eslint-config-loris)
 * [eslint-config-loris-react](packages/eslint-config-loris-react)
-* [jscs-preset-loris](packages/jscs-preset-loris)
+* [tslint-config-loris](packages/tslint-config-loris)
+
+### Deprecated
+
+* [jscs-preset-loris](packages/jscs-preset-loris) (use `eslint-config-loris` instead)
