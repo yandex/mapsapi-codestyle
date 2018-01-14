@@ -1,6 +1,6 @@
 module.exports = {
     // Add additional rules from https://github.com/buzinas/tslint-eslint-rules
-    'rulesDirectory': 'tslint-eslint-rules',
+    'extends': 'tslint-eslint-rules',
     'rules': {
         // TypeScript specific
         'no-empty-interface': true,
