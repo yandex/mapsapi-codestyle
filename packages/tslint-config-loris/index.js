@@ -37,7 +37,7 @@ module.exports = {
         'no-constant-condition': [true, {checkLoops: false}],
         'no-control-regex': true,
         'no-debugger': true,
-        'no-duplicate-case': true,
+        'no-duplicate-switch-case': true,
         'no-empty-character-class': true,
         'no-ex-assign': true,
         'no-extra-semi': true,
