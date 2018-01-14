@@ -1,0 +1,22 @@
+{
+  "name": "tslint-config-loris",
+  "description": "TSLint config for Loris code style",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ymaps/codestyle"
+  },
+  "keywords": [
+    "tslint",
+    "tslintconfig"
+  ],
+  "author": "Kirill Dmitrenko <kdmitrenko@gmail.com>",
+  "contributors": [
+    "Konstantin Ikonnikov <ikokostya@gmail.com>"
+  ],
+  "peerDependencies": {
+    "tslint": "^5.8.0",
+    "tslint-eslint-rules": "^4.1.1"
+  },
+  "license": "MIT"
+}
