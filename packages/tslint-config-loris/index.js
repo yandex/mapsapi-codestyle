@@ -58,7 +58,7 @@ module.exports = {
         'no-empty': [true, 'allow-empty-catch'],
         'no-eval': true,
         'no-multi-spaces': true,
-        'no-duplicate-variable': [true, "check-parameters"],
+        'no-duplicate-variable': [true, 'check-parameters'],
         'no-string-throw': true,
         'no-unused-expression': false,
         'radix': true,
@@ -93,8 +93,8 @@ module.exports = {
         'comment-format': [true, 'check-space'],
         'ban': [
             true,
-            {"name": ["describe", "only"], "message": "Don't focus tests"},
-            {"name": ["it", "only"], "message": "Don't focus tests"}
+            {'name': ['describe', 'only'], 'message': 'Don\'t focus tests'},
+            {'name': ['it', 'only'], 'message': 'Don\'t focus tests'}
         ],
 
         // https://github.com/buzinas/tslint-eslint-rules#stylistic-issues
