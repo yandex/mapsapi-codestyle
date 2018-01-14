@@ -9,8 +9,13 @@
 
 List of npm packages that help check code style in your project:
 
+### JavaScript
+
 * [eslint-config-loris](packages/eslint-config-loris)
 * [eslint-config-loris-react](packages/eslint-config-loris-react)
+
+### TypeScript
+
 * [tslint-config-loris](packages/tslint-config-loris)
 
 ### Deprecated
