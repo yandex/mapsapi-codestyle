@@ -64,15 +64,18 @@ module.exports = {
         'radix': true,
         'no-unused-variable': true,
         'no-use-before-declare': true,
+        'ban': [
+            true,
+            {'name': ['describe', 'only'], 'message': 'Don\'t focus tests'},
+            {'name': ['it', 'only'], 'message': 'Don\'t focus tests'}
+        ],
 
-        // https://github.com/buzinas/tslint-eslint-rules#variables
+        // https://github.com/buzinas/tslint-eslint-rules#stylistic-issues
         'array-bracket-spacing': [true, 'never'],
         'brace-style': [true, '1tbs'],
-        'variable-name': [true, 'ban-keywords'],
+        'comment-format': [true, 'check-space'],
         'eofline': true,
-        'ter-indent': [true, 4, {SwitchCase: 1}],
         'linebreak-style': [true, 'LF'],
-        'ter-max-len': [true, {code: 120, ignoreUrls: true}],
         'new-parens': true,
         'indent': [true, 'spaces'],
         'no-consecutive-blank-lines': true,
@@ -82,6 +85,9 @@ module.exports = {
         'object-literal-key-quotes': [true, 'as-needed'],
         'quotemark': [true, 'single'],
         'semicolon': [true, 'always'],
+        'ter-indent': [true, 4, {SwitchCase: 1}],
+        'ter-max-len': [true, {code: 120, ignoreUrls: true}],
+        'variable-name': [true, 'ban-keywords'],
         'whitespace': [
             true,
             'check-branch',
@@ -90,14 +96,8 @@ module.exports = {
             'check-separator',
             'check-type'
         ],
-        'comment-format': [true, 'check-space'],
-        'ban': [
-            true,
-            {'name': ['describe', 'only'], 'message': 'Don\'t focus tests'},
-            {'name': ['it', 'only'], 'message': 'Don\'t focus tests'}
-        ],
 
-        // https://github.com/buzinas/tslint-eslint-rules#stylistic-issues
+        // https://github.com/buzinas/tslint-eslint-rules#ecmascript-6
         'ter-arrow-parens': [true, 'always'],
         'ter-arrow-spacing': [true],
         'no-var-keyword': true,
