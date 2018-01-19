@@ -94,7 +94,8 @@ module.exports = {
             'check-decl',
             'check-operator',
             'check-separator',
-            'check-type'
+            'check-type',
+            'check-type-operator'
         ],
 
         // https://github.com/buzinas/tslint-eslint-rules#ecmascript-6
