@@ -128,6 +128,20 @@ from JS).
   }
   ```
 
+* There should be one whitespace before and after the type operator:
+
+  **Good:**
+
+  ```ts
+  let foo: string | number;
+  ```
+
+  **Bad:**
+
+  ```ts
+  let foo: string|number;
+  ```
+
 [&#8593; back to TOC](#table-of-contents)
 
 ## Type assertions
