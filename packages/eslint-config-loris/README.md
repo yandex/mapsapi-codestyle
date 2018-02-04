@@ -30,7 +30,7 @@ module.exports = {
 };
 ```
 
-Also available:
+Other available presets:
 
 * `loris/es2017`
 
