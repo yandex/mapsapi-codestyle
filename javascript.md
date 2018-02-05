@@ -1372,7 +1372,7 @@ the asterisk should be sticked to the `yield` keyword:
 * Avoid unnecessary `return await`.
 
   > Explanation: An async function always wraps the return value in a `Promise`. Using `return await`
-  > just adds extra time before the overreaching promise is resolved without changing the semantics.
+  > just adds extra time before the resulting promise is resolved without changing the semantics.
 
   **Good:**
 
