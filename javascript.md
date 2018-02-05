@@ -1369,11 +1369,10 @@ the asterisk should be sticked to the `yield` keyword:
 
 ### async-await
 
-* Don't use `return await`
+* Avoid unnecessary `return await`.
 
-  > Explanation: Since the return value of an async function is always wrapped in `Promise.resolve`,
-  > return await doesn’t actually do anything except add extra time before the overarching `Promise`
-  > resolves or rejects.
+  > Explanation: An async function always wraps the return value in a `Promise`. Using `return await`
+  > just adds extra time before the overreaching promise is resolved without changing the semantics.
 
   **Good:**
 
