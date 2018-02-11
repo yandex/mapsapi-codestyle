@@ -1390,6 +1390,8 @@ the asterisk should be sticked to the `yield` keyword:
   }
   ```
 
+[&#8593; back to TOC](#table-of-contents)
+
 ## Node.js
 
 ### Importing modules
