@@ -21,7 +21,7 @@ module.exports = {
 };
 ```
 
-* For [ECMAScript 6](https://www.ecma-international.org/ecma-262/6.0/index.html)
+* For [ECMAScript 2015](https://www.ecma-international.org/ecma-262/6.0/index.html)
 
 ```js
 module.exports = {
@@ -29,6 +29,10 @@ module.exports = {
     root: true
 };
 ```
+
+Other available presets:
+
+* `loris/es2017`
 
 Note that configuration doesn't specify [environment](http://eslint.org/docs/user-guide/configuring#specifying-environments).
 You can easily add it like this:

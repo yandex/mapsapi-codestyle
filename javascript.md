@@ -43,7 +43,7 @@ JavaScript Code Style
   - [Return statement](#return-statement)
 - [Classes](#classes)
 - [Enums](#enums)
-- [ECMAScript 6](#ecmascript-6)
+- [ECMAScript 2015](#ecmascript-2015)
   - [Strict mode](#strict-mode)
   - [Variable declaration](#variable-declaration-1)
   - [Classes](#classes-1)
@@ -54,6 +54,8 @@ JavaScript Code Style
   - [Rest parameters and spread operator](#rest-parameters-and-spread-operator)
   - [Generators](#generators)
   - [Modules](#modules)
+- [ECMAScript 2017](#ecmascript-2017)
+  - [async-await](#async-await)
 - [Node.js](#nodejs)
   - [Importing modules](#importing-modules)
 - [Licence](#licence)
@@ -857,7 +859,7 @@ var Color = {
 
 [&#8593; back to TOC](#table-of-contents)
 
-## ECMAScript 6
+## ECMAScript 2015
 
 This section describes code style for [ECMAScript 2015 Language Specification](http://www.ecma-international.org/publications/standards/Ecma-262.htm).
 
@@ -1359,6 +1361,33 @@ the asterisk should be sticked to the `yield` keyword:
       name3,
       name4
   };
+  ```
+
+[&#8593; back to TOC](#table-of-contents)
+
+## ECMAScript 2017
+
+### async-await
+
+* Avoid unnecessary `return await`.
+
+  > Explanation: An async function always wraps the return value in a `Promise`. Using `return await`
+  > just adds extra time before the resulting promise is resolved without changing the semantics.
+
+  **Good:**
+
+  ```js
+  async function foo() {
+      return bar();
+  }
+  ```
+
+  **Bad:**
+
+  ```js
+  async function foo() {
+      return await bar();
+  }
   ```
 
 [&#8593; back to TOC](#table-of-contents)

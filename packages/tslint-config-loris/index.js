@@ -79,6 +79,7 @@ module.exports = {
         'new-parens': true,
         'indent': [true, 'spaces'],
         'no-consecutive-blank-lines': true,
+        'no-return-await': true,
         'no-trailing-whitespace': true,
         'object-curly-spacing': [true, 'never'],
         'one-variable-per-declaration': true,
