@@ -21,7 +21,7 @@ module.exports = {
 };
 ```
 
-* For [ECMAScript 2015](https://www.ecma-international.org/ecma-262/6.0/index.html)
+* For [ECMAScript 6](https://www.ecma-international.org/ecma-262/6.0/index.html) (aka ECMAScript 2015)
 
 ```js
 module.exports = {
@@ -30,7 +30,7 @@ module.exports = {
 };
 ```
 
-Other available presets:
+Other available configurations:
 
 * `loris/es2017`
 

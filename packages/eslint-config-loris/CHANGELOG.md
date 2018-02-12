@@ -1,3 +1,7 @@
+## 9.1.0
+
+* Add new configuration `es2017` with [`no-return-await`][no-return-await] rule ([#107](https://github.com/ymaps/codestyle/pull/107)).
+
 ## 9.0.0
 
 * Add new rules to `es5` config ([#103](https://github.com/ymaps/codestyle/pull/103)):
@@ -81,3 +85,4 @@ Initial release.
 [strict]: http://eslint.org/docs/rules/strict
 [no-multiple-empty-lines]: http://eslint.org/docs/rules/no-multiple-empty-lines
 [prefer-arrow-callback]: http://eslint.org/docs/rules/prefer-arrow-callback
+[no-return-await]: http://eslint.org/docs/rules/no-return-await
