@@ -1,3 +1,7 @@
+## 3.0.0
+
+* Add [`no-return-await`][no-return-await] rule ([#107](https://github.com/ymaps/codestyle/pull/107)).
+
 ## 2.0.0
 
 * Add `'check-type-operator'` to [`whitespace`][whitespace] rule ([#106](https://github.com/ymaps/codestyle/pull/106)).
@@ -11,3 +15,4 @@
 * Initial version ([#102](https://github.com/ymaps/codestyle/pull/102))
 
 [whitespace]: https://palantir.github.io/tslint/rules/whitespace/
+[no-return-await]: https://palantir.github.io/tslint/rules/no-return-await/
