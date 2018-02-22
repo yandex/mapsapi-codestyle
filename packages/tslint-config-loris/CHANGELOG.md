@@ -1,3 +1,7 @@
+## 3.0.1
+
+* Update peer dependency from `tslint-eslint-rules`.
+
 ## 3.0.0
 
 * Add [`no-return-await`][no-return-await] rule ([#107](https://github.com/ymaps/codestyle/pull/107)).

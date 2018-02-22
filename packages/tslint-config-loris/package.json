@@ -1,7 +1,7 @@
 {
   "name": "tslint-config-loris",
   "description": "TSLint config for Loris code style",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/ymaps/codestyle"
@@ -16,7 +16,7 @@
   ],
   "peerDependencies": {
     "tslint": "^5.8.0",
-    "tslint-eslint-rules": "^4.1.1"
+    "tslint-eslint-rules": ">=4.1.1 <6"
   },
   "license": "MIT"
 }
