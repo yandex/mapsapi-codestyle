@@ -1392,8 +1392,8 @@ the asterisk should be sticked to the `yield` keyword:
 
 * Don't use `async` when it has no useful effect.
 
-  It’s easy to get in the habit of using async on any function that does anything related to
-  asynchrony. But in some cases, it’s extraneous. If you can omit the async without changing the
+  It's easy to get in the habit of using async on any function that does anything related to
+  asynchrony. But in some cases, it's extraneous. If you can omit the async without changing the
   behavior of the function, do so.
 
   **Good:**
