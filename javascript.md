@@ -1404,7 +1404,6 @@ the asterisk should be sticked to the `yield` keyword:
   }
   ```
 
-
   **Bad:**
 
   ```js
