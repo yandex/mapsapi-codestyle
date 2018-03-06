@@ -1415,7 +1415,7 @@ the asterisk should be sticked to the `yield` keyword:
   Cases where async is useful include:
   * You are using await. (This is the obvious one.)
   * You are returning an error asynchronously.
-  * You are returning a value and you want it implicitly wrapped in a future.
+  * You are returning a value and you want it implicitly wrapped in a promise.
 
    **Good:**
 
