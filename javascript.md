@@ -1417,15 +1417,15 @@ the asterisk should be sticked to the `yield` keyword:
   * You are returning an error asynchronously.
   * You are returning a value and you want it implicitly wrapped in a promise.
 
-   **Good:**
+  **Good:**
 
-   ```js
-   async function asyncError() {
+  ```js
+  async function asyncError() {
       throw new Error('Error!');
-   }
+  }
 
-   const asyncValue = async () => 'value';
-   ```
+  const asyncValue = async () => 'value';
+  ```
 
 [&#8593; back to TOC](#table-of-contents)
 
