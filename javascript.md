@@ -1390,6 +1390,43 @@ the asterisk should be sticked to the `yield` keyword:
   }
   ```
 
+* Don't use `async` when it has no useful effect.
+
+  It's easy to get in the habit of using async on any function that does anything related to
+  asynchrony. But in some cases, it's extraneous. If you can omit the async without changing the
+  behavior of the function, do so.
+
+  **Good:**
+
+  ```js
+  function afterTwoThings(first, second) {
+      return Promise.all([first, second]);
+  }
+  ```
+
+  **Bad:**
+
+  ```js
+  async function afterTwoThings(first, second) {
+      return Promise.all([first, second]);
+  }
+  ```
+
+  Cases where async is useful include:
+  * You are using await. (This is the obvious one.)
+  * You are returning an error asynchronously.
+  * You are returning a value and you want it implicitly wrapped in a promise.
+
+  **Good:**
+
+  ```js
+  async function asyncError() {
+      throw new Error('Error!');
+  }
+
+  const asyncValue = async () => 'value';
+  ```
+
 [&#8593; back to TOC](#table-of-contents)
 
 ## Node.js
