@@ -273,7 +273,7 @@ from JS).
   **Bad:**
 
   ```ts
-  class Foo {
+  enum Foo {
       Bar,
       Baz
   }
