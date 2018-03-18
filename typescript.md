@@ -30,15 +30,29 @@ defines rules for TypeScript specific features.
 `tsc` has some [options](http://www.typescriptlang.org/docs/handbook/compiler-options.html)
 to make type checks stricter:
 
-* `noImplicitAny`;
-* `noImplicitReturns`;
-* `noUnusedLocals`;
-* `noUnusedParameters`;
-* `noImplicitThis`;
-* `strictNullChecks`.
+```json
+{
+    "compilerOptions": {
+        "strict": true,
+        "noImplicitReturns": true,
+        "noEmitOnError": true
+    }
+}
+```
 
-It's recommended to turn them on as early as possible in development (and migration
-from JS).
+It's recommended to turn them on as early as possible in development (and migration from JS).
+
+Also, if you want check unused variables and parameters with `TypeScript` instead `tslint`, you can
+add the following options:
+
+```json
+{
+    "compilerOptions": {
+        "noUnusedLocals": true,
+        "noUnusedParameters": true
+    }
+}
+```
 
 [&#8593; back to TOC](#table-of-contents)
 
