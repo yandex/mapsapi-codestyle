@@ -34,7 +34,6 @@ to make type checks stricter:
 {
     "compilerOptions": {
         "strict": true,
-        "noImplicitReturns": true,
         "noEmitOnError": true
     }
 }
@@ -42,7 +41,7 @@ to make type checks stricter:
 
 It's recommended to turn them on as early as possible in development (and migration from JS).
 
-Also, if you want check unused variables and parameters with `TypeScript` instead `tslint`, you can
+If you want `TypeScript` to check for unused variables and parameters instead `tslint`, you can
 add the following options:
 
 ```json
