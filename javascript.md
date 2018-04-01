@@ -1343,6 +1343,20 @@ the asterisk should be sticked to the `yield` keyword:
 
 ### Modules
 
+* There should be no whitespace after the opening and before the closing curly braces (like in objects):
+
+  **Good:**
+
+  ```js
+  import {name1, name2} from 'foo';
+  ```
+
+  **Bad:**
+
+  ```js
+  import { name1, name2 } from 'foo';
+  ```
+
 * Long named [imports](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
   and [exports](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
   should be written as in the examples:
