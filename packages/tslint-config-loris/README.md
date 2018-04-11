@@ -6,7 +6,7 @@
 ## Installation
 
 ```
-npm install --save-dev tslint tslint-eslint-rules tslint-config-loris
+npm install --save-dev tslint tslint-config-loris
 ```
 
 ## Usage

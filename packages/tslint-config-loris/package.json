@@ -15,8 +15,10 @@
     "Konstantin Ikonnikov <ikokostya@gmail.com>"
   ],
   "peerDependencies": {
-    "tslint": "^5.8.0",
-    "tslint-eslint-rules": ">=4.1.1 <6"
+    "tslint": "^5.8.0"
+  },
+  "dependencies": {
+    "tslint-eslint-rules": "^5.1.0"
   },
   "license": "MIT"
 }
