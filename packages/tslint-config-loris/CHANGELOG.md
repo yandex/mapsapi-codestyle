@@ -1,3 +1,7 @@
+## 4.0.0
+
+* Include `tslint-eslint-rules` as normal dependency ([#112](https://github.com/ymaps/codestyle/pull/112)).
+
 ## 3.0.1
 
 * Update peer dependency from `tslint-eslint-rules`.
