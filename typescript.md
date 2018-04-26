@@ -118,6 +118,43 @@ add the following options:
   >
   > > ...type aliases cannot be extended or implemented from.
 
+* Always explicitly specify return type of a function or a method:
+
+  > Explanation:
+  > * Signature of a function (and of a method) is documentation for fellow
+      developers. Thus, leaving it to the compiler to infer adds a burden on a
+      human who reads your code to do the same job.
+  > * There's always a chance to get it plainly wrong with either a wrong guess
+      (you meant one type, compiler inferred another) or break things later
+      possibly in an ambiguous manner. I.e., let's say leave for the compiler to
+      infer some types from function's return type that gets inferred itself. If
+      it changes, compilation errors will arise from usage sights of those variables,
+      not on call sights of the function.
+
+  **Good**
+
+  ```ts
+  function foo(): void {
+      // ...
+  }
+
+  function bar(): number | undefined {
+      return something ? 1 : undefined;
+  }
+  ```
+
+  **Bad**
+
+  ```ts
+  function foo() {
+      // ...
+  }
+
+  function bar() {
+      return something ? 1 | undefined;
+  }
+  ```
+
 * Don't use `void` for functions returning `undefined`:
 
   > Explanation:
