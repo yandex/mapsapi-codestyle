@@ -63,12 +63,17 @@ add the following options:
   * `K` and `V` are reserved for key-value generic data structures, `K` for key
     types and `V` for value types;
   * `T` and `U` are reserved for generic data types;
-  * other generic parameters should have meaningful names:
+  * other generic parameters should have meaningful names with `T` suffix, i.e
+    `GenericParameterT`:
+
+  > Explanation:
+  > Suffix `T` allows to avoid potential naming conflicts and clearly marks type
+  > as a generic parameter.
 
   **Good:**
 
   ```ts
-  function foo<Attribute, State>(attributes: Attribute[], state: State): void {
+  function foo<AttributeT, StateT>(attributes: AttributeT[], state: StateT): void {
       // ...
   }
   ```
