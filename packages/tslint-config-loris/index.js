@@ -17,6 +17,8 @@ module.exports = {
         ],
         'array-type': [true, 'array'],
         'class-name': true,
+        // Forbid public modifier for members, because this is the default in TypeScript.
+        'member-access': [true, 'no-public'],
 
         // https://github.com/buzinas/tslint-eslint-rules#possible-errors
         'trailing-comma': [true, {multiline: 'never', singleline: 'never'}],
