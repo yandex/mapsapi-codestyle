@@ -1,3 +1,7 @@
+## 5.0.0
+
+* Forbid public modifier ([#114](https://github.com/ymaps/codestyle/pull/114)).
+
 ## 4.0.0
 
 * Include `tslint-eslint-rules` as normal dependency ([#112](https://github.com/ymaps/codestyle/pull/112)).
