@@ -159,18 +159,20 @@ add the following options:
 
 ## Type assertions
 
-* If you don't use `JSX`, use "angle-bracket" syntax:
+* Use `as Type` for type assertions:
+
+  > Explanation: Use one style for `JSX` and not.
 
   **Good:**
 
   ```ts
-  (<string>someValue).length;
+  (someValue as string).length;
   ```
 
   **Bad:**
 
   ```ts
-  (someValue as string).length;
+  (<string>someValue).length;
   ```
 
 ## Arrays
