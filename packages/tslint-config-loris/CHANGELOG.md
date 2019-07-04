@@ -1,3 +1,7 @@
+## 6.0.0
+
+* Disallow angle bracket type assertions ([#115](https://github.com/ymaps/codestyle/pull/115)).
+
 ## 5.0.0
 
 * Forbid public modifier ([#114](https://github.com/ymaps/codestyle/pull/114)).
