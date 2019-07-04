@@ -19,7 +19,7 @@ module.exports = {
         'class-name': true,
         // Forbid public modifier for members.
         'member-access': [true, 'no-public'],
-        "no-angle-bracket-type-assertion": true,
+        'no-angle-bracket-type-assertion': true,
 
         // https://github.com/buzinas/tslint-eslint-rules#possible-errors
         'trailing-comma': [true, {multiline: 'never', singleline: 'never'}],
