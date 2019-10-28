@@ -1301,22 +1301,30 @@ should be sticked to the `function` keyword:
   };
   ```
 
-* In a [shorthand method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions)
-the asterisk should be sticked to the `method name`:
+* In a [method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions)
+the asterisk should not be sticked to the `method name` or `modifier`:
+
+  > Explanation: asterisk is not a part of the method name or modifier.
+  > See https://exploringjs.com/es6/ch_generators.html#sec_formating-generators
 
   **Good:**
 
   ```js
-  class Graph {
-      *edges() {}
+  class Class {
+      * method() {}
+
+      static * method() {}
   }
   ```
 
   **Bad:**
 
   ```js
-  class Graph {
-      * edges() {}
+  class Class {
+      *method() {}
+
+      static *method() {}
+      static* method() {}
   }
   ```
 

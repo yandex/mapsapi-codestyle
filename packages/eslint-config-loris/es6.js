@@ -29,6 +29,10 @@ module.exports = {
         'prefer-spread': 'error',
         'rest-spread-spacing': ['error', 'never'],
         'template-curly-spacing': ['error', 'never'],
-        'yield-star-spacing': ['error', 'after']
+        'yield-star-spacing': ['error', {
+            before: false,
+            after: true,
+            method: {before: true, after: true}
+        }]
     }
 };
